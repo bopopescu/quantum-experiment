@@ -1,5 +1,5 @@
-chroot/root/
-chroot/tmp/
+chroot/root
+chroot/tmp
 *.py[co]
 
 # Packages
