@@ -1,5 +1,0 @@
-/etc/dpkg/dpkg.cfg.d/multiarch
-/etc/dpkg/dpkg.cfg
-/etc/logrotate.d/dpkg
-/etc/cron.daily/dpkg
-/etc/alternatives/README

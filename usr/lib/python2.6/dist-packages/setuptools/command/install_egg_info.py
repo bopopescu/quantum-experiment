@@ -1,1 +1,0 @@
-../../../../../share/pyshared/setuptools/command/install_egg_info.py

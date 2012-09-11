@@ -1,1 +1,0 @@
-../../../../../share/pyshared/setuptools/tests/test_resources.py

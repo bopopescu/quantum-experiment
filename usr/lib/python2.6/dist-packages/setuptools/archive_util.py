@@ -1,1 +1,0 @@
-../../../../share/pyshared/setuptools/archive_util.py
