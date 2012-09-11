@@ -12,8 +12,9 @@ else
 fi
 COMMAND="/bin/bash -i"
 if [ -n "$1" ]; then
-  COMMAND="$1"
+  COMMAND="/bin/bash -i -c \"$@\""
 fi
+echo -e "Using command: ${COMMAND}"
 
 bindDir() {
   D=$1
@@ -32,7 +33,7 @@ bindDir tests &&
 bindDir bin &&
 bindDir logs &&
 
-sudo -i chroot ${CHROOT}/ ${COMMAND} 
+sudo -i chroot ${CHROOT}/ ${COMMAND}
 
 sudo umount ${CHROOT}/proc/
 sudo umount ${CHROOT}/dev/pts
