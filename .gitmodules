@@ -1,0 +1,3 @@
+[submodule "eutester"]
+	path = eutester
+	url = git@github.com:eucalyptus/eutester
