@@ -1,8 +1,8 @@
 #!/usr/bin/python
 from eucaops import Eucaops
-from eutester import eutestcase.EutesterTestcase
+import unittest
 
-class MyFirstTest(EutesterTestcase):
+class MyFirstTest(unittest.TestCase):
 
     def setUp(self):
         """
