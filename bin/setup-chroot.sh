@@ -10,7 +10,16 @@ if [ ! -e ${TOP}/eutester/.gitignore ]; then
 else
   echo -e "Using eutester at rev:\n\t${REVEUTESTER}"
 fi
+COMMAND="/bin/bash -i"
+if [ -n "$1" ]; then
+  COMMAND="$1"
+fi
 
+bindDir() {
+  D=$1
+  sudo mkdir -p ${CHROOT}/root/${D} && 
+  sudo mount -o bind ${TOP}/${D} ${CHROOT}/root/${D}
+}
 
 sudo mkdir -p ${CHROOT}/proc/ && 
 sudo mount -t proc none ${CHROOT}/proc/ &&
@@ -18,13 +27,12 @@ sudo mount -t proc none ${CHROOT}/proc/ &&
 sudo mkdir -p ${CHROOT}/dev/pts &&
 sudo mount -t devpts devpts ${CHROOT}/dev/pts &&
 
-sudo mkdir -p ${CHROOT}/root/eutester &&
-sudo mount -o bind ${TOP}/eutester ${CHROOT}/root/eutester &&
+bindDir eutester &&
+bindDir tests &&
+bindDir bin &&
+bindDir logs &&
 
-sudo mkdir -p ${CHROOT}/root/tests &&
-sudo mount -o bind ${TOP}/tests  ${CHROOT}/root/tests &&
-
-sudo -i chroot ${CHROOT}/ /bin/bash; 
+sudo -i chroot ${CHROOT}/ ${COMMAND} 
 
 sudo umount ${CHROOT}/proc/
 sudo umount ${CHROOT}/dev/pts
