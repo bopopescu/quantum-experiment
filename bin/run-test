@@ -13,7 +13,7 @@ else
     exit 1
   fi
   MESSAGE="Tested ${BRANCHNAME} in ${TESTBRANCHNAME} at $(date)"
-  if echo DO SOMETHING HERE | tee logs/stdout; then
+  if $TOP/bin/setup-chroot.sh root/tests/test.py | tee logs/stdout; then
     MESSAGE="${MESSAGE}\n\tSUCCEEDED\n\n"
   else
     MESSAGE="${MESSAGE}\n\tFAILED\n\n"
