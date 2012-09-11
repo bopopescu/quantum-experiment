@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/bin
+/usr/lib
+/usr/lib/pkgconfig
+/usr/share
+/usr/share/doc
+/usr/bin/python-config
+/usr/lib/pkgconfig/python.pc
+/usr/share/doc/python-dev
