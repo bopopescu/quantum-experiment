@@ -1,0 +1,4625 @@
+Package: python-pkg-resources
+Priority: optional
+Section: python
+Installed-Size: 208
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: distribute
+Version: 0.6.16-1
+Replaces: python2.3-setuptools, python2.4-setuptools
+Provides: python2.6-setuptools, python2.7-setuptools
+Depends: python (>= 2.6), python (<< 2.8)
+Suggests: python-distribute, python-distribute-doc
+Conflicts: python-setuptools (<< 0.6c8-3), python2.3-setuptools (<< 0.6b2), python2.4-setuptools (<< 0.6b2)
+Filename: pool/main/d/distribute/python-pkg-resources_0.6.16-1_all.deb
+Size: 62650
+MD5sum: f547e7dcdb0163bf3748727f03e56e37
+Description: Package Discovery and Resource Access using pkg_resources
+ The pkg_resources module provides an API for Python libraries to
+ access their resource files, and for extensible applications and
+ frameworks to automatically discover plugins.  It also provides
+ runtime support for using C extensions that are inside zipfile-format
+ eggs, support for merging packages that have separately-distributed
+ modules or subpackages, and APIs for managing Python's current
+ "working set" of active packages.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://packages.python.org/distribute
+Python-Version: 2.6, 2.7
+
+Package: debconf
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 1032
+Origin: Ubuntu
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 1.5.40ubuntu1
+Replaces: debconf-tiny
+Provides: debconf-2.0
+Pre-Depends: perl-base (>= 5.6.1-4)
+Recommends: apt-utils (>= 0.5.1), debconf-i18n
+Suggests: debconf-doc, debconf-utils, whiptail | dialog | gnome-utils, libterm-readline-gnu-perl, libgtk2-perl (>= 1:1.130), libnet-ldap-perl, perl, libqtgui4-perl, libqtcore4-perl
+Conflicts: apt (<< 0.3.12.1), cdebconf (<< 0.96), debconf-tiny, debconf-utils (<< 1.3.22), dialog (<< 0.9b-20020814-1), menu (<= 2.1.3-1), whiptail (<< 0.51.4-11), whiptail-utf8 (<= 0.50.17-13)
+Filename: pool/main/d/debconf/debconf_1.5.40ubuntu1_all.deb
+Size: 144770
+MD5sum: a7c7b015ec8dcda48bf6761d99c9634d
+Description: Debian configuration management system
+Original-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+SHA1: 3f5cd862b51d6d1582d24c099e75036eafbf760e
+SHA256: 1d0c16c1058f52d02fe464675a1605c2bec7acca269b9813ca5cff485f6df934
+Description-md5: 85b82bf406dfc9a635114f44ab7fb66d
+Supported: 18m
+Task: minimal
+
+Package: dash
+Essential: yes
+Priority: required
+Section: shells
+Installed-Size: 252
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 0.5.5.1-7.4ubuntu1
+Depends: debianutils (>= 2.15), dpkg (>= 1.15.0)
+Pre-Depends: libc6 (>= 2.11)
+Filename: pool/main/d/dash/dash_0.5.5.1-7.4ubuntu1_amd64.deb
+Size: 88260
+MD5sum: a16a5f314a036d2f655b8756cc6a0e16
+Description: POSIX-compliant shell
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+SHA1: 1cfd29b10806c8e9c2c079a2fb9a13f7502a558a
+SHA256: adede02537e6c70bea9e531852e43424da6a51287de0e59c34b53e37a6ac488b
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description-md5: 8d4d9c32c6b2b70328f7f774a0cc1248
+Supported: 18m
+Task: minimal
+
+Package: libxdmcp6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxdmcp
+Version: 1:1.1.0-3
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 12656
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: coreutils
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 5656
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 8.5-1ubuntu6
+Replaces: mktemp, timeout
+Pre-Depends: libacl1 (>= 2.2.11-1), libattr1 (>= 2.4.41-1), libc6 (>= 2.7), libselinux1 (>= 1.32)
+Conflicts: timeout
+Filename: pool/main/c/coreutils/coreutils_8.5-1ubuntu6_amd64.deb
+Size: 2288870
+MD5sum: 5768ca304310e4c6c58597aa2cc1098f
+Description: GNU core utilities
+Original-Maintainer: Michael Stone <mstone@debian.org>
+SHA1: 81294b4cb825147f907884521c9801021169d4cc
+SHA256: db515bf6de5d3130451a1b1a21c957c9c30cb580b8670a882f1fb039ace1200c
+Homepage: http://gnu.org/software/coreutils
+Description-md5: ca29325ab0239421f7b6be11369cc121
+Supported: 18m
+Task: minimal
+
+Package: debianutils
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 356
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 4.0.2
+Depends: sensible-utils
+Pre-Depends: libc6 (>= 2.7)
+Filename: pool/main/d/debianutils/debianutils_4.0.2_amd64.deb
+Size: 63202
+MD5sum: 2bbae01bc0d92fbb5c4aa6fd83092261
+Description: Miscellaneous utilities specific to Debian
+Original-Maintainer: Clint Adams <clint@debian.org>
+SHA1: b400c88c58a525187692318c7e0e4e7ee5ebe070
+SHA256: 107c352a630f08683de0aa9e1bfc6c7cb460e2d1af3262189245e6aab4a2be8e
+Description-md5: 48860743f55caefbd309e769afd42d3f
+Supported: 18m
+Task: minimal
+
+Package: libxmuu1
+Priority: optional
+Section: libs
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxmu
+Version: 2:1.1.0-2
+Depends: libc6 (>= 2.4), libx11-6
+Size: 10922
+Description: X11 miscellaneous micro-utility library
+ libXmuu provides a set of miscellaneous utility convenience functions for X
+ libraries to use.  It is a lighter version of libXmu that does not depend
+ on libXt or libXext; for more information on libXmu, see libxmu6.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXmu
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: initramfs-tools
+Priority: required
+Section: utils
+Installed-Size: 512
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 0.99ubuntu7
+Provides: linux-initramfs-tool
+Depends: initramfs-tools-bin (>= 0.99ubuntu7), initramfs-tools-bin (<< 0.99ubuntu7.1~), klibc-utils (>= 1.5.9-1), busybox-initramfs (>= 1:1.13.3-1ubuntu5), cpio, module-init-tools, udev (>= 147~-5), findutils (>= 4.2.24), util-linux (>> 2.15~rc1)
+Suggests: bash-completion
+Breaks: cryptsetup (<< 2:1.1.0-2.1), elilo (<< 3.12-3.1~), lilo (<< 22.8-8.2~), mountall (<< 2.0~), s390-tools (<< 1.8.3-2~)
+Conflicts: usplash (<< 0.5.50)
+Filename: pool/main/i/initramfs-tools/initramfs-tools_0.99ubuntu7_all.deb
+Size: 51644
+MD5sum: 398dec6f51b3ae509bfa773b7f51e1db
+Description: tools for generating an initramfs
+Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+SHA1: f542b98ec78cc10dc9f7a5aaab1821044ac85276
+SHA256: 1eada9dfcf530381bc432543f84de5104d02079199c0495e50d466a34922a596
+Description-md5: a490e1911ad8a5615a7f99c834d1a8d0
+Supported: 18m
+Task: minimal
+
+Package: makedev
+Priority: required
+Section: admin
+Installed-Size: 144
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 2.3.1-89ubuntu1
+Depends: base-passwd (>= 3.0.4)
+Conflicts: udev (<= 0.024-7)
+Filename: pool/main/m/makedev/makedev_2.3.1-89ubuntu1_all.deb
+Size: 42470
+MD5sum: 91da7657b2bfa87d595570ff018f090f
+Description: creates device files in /dev
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+SHA1: 938517381509823d05d11703a8cf4009ae6f60e1
+SHA256: fb1e8ae7068621534a9b42b693b9254899d90e957b3c0bddc33ae18f7ef437cb
+Description-md5: 0d90ffc36746b1d25c5b125ef2221357
+Supported: 18m
+Task: minimal
+
+Package: login
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 1048
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: shadow
+Version: 1:4.1.4.2+svn3283-3ubuntu2
+Replaces: manpages-de (<< 0.5-3), manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
+Pre-Depends: libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libpam-runtime, libpam-modules
+Conflicts: amavisd-new (<< 2.3.3-8), backupninja (<< 0.9.3-5), echolot (<< 2.1.8-4), gnunet (<< 0.7.0c-2), python-4suite (<< 0.99cvs20060405-1)
+Filename: pool/main/s/shadow/login_4.1.4.2+svn3283-3ubuntu2_amd64.deb
+Size: 287292
+MD5sum: 8ff00d18158267a183cccbede7e76597
+Description: system login tools
+Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+SHA1: 931099b73890a08c4e245a4ea88d13954d01177a
+SHA256: d605f05a32af9ece5ad368ddac32d6ae86e974f2670b824ca19afcb43f14a252
+Homepage: http://pkg-shadow.alioth.debian.org/
+Description-md5: a9c42fe48288d1e8b7d3d34463d0f485
+Supported: 18m
+Task: minimal
+
+Package: gpgv
+Priority: important
+Section: utils
+Installed-Size: 448
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gnupg
+Version: 1.4.11-3ubuntu1
+Depends: libbz2-1.0, libc6 (>= 2.4), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Suggests: gnupg
+Filename: pool/main/g/gnupg/gpgv_1.4.11-3ubuntu1_amd64.deb
+Size: 185970
+MD5sum: 6f7bce8d631d4939cd182a55defe37cb
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is a stripped-down version of gnupg which is only able to check
+ signatures.  It is smaller than the full-blown gnupg and uses a
+ different (and simpler) way to check that the public keys used to
+ make the signature are trustworthy.
+Homepage: http://www.gnupg.org
+Original-Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+
+Package: libssl1.0.0
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 2748
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: openssl
+Version: 1.0.0e-2ubuntu4
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
+Pre-Depends: multiarch-support
+Filename: pool/main/o/openssl/libssl1.0.0_1.0.0e-2ubuntu4_amd64.deb
+Size: 958734
+MD5sum: 569535bf387283c7b59ab52e984c237d
+Description: SSL shared libraries
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+SHA1: c28aaba7704f9c560a1216d4d528dc0321cfbfc4
+SHA256: 7e1a23d44760c2f93612c46d2bf9941698147d56592116a185f8f9cc91bf814d
+Description-md5: 2e9416e72fb31714d9b26021a3ee7e85
+Supported: 18m
+Task: minimal
+
+Package: libdbus-1-3
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 388
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: dbus
+Version: 1.4.14-1ubuntu1
+Depends: libc6 (>= 2.10)
+Pre-Depends: multiarch-support
+Recommends: dbus
+Breaks: kde-window-manager (<< 4:4.4.5-9), kdebase-workspace-bin (<< 4:4.4.5-9)
+Filename: pool/main/d/dbus/libdbus-1-3_1.4.14-1ubuntu1_amd64.deb
+Size: 143644
+MD5sum: ebccb7199b1b620b4f08a0fd8caf7532
+Description: simple interprocess messaging system (library)
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+SHA1: 727726920677faaaf848f43a5453a0c61b654d3c
+SHA256: 2c6545cb6a4bea8c738754607c7d8128b7ef81bc7939c658451763c51e4a8c89
+Homepage: http://dbus.freedesktop.org/
+Description-md5: 394b84dd0007d22bc4bb591ca6b5fa31
+Supported: 18m
+Task: minimal
+
+Package: module-init-tools
+Priority: required
+Section: admin
+Installed-Size: 432
+Origin: Ubuntu
+Maintainer: Scott James Remnant <scott@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 3.16-1ubuntu1
+Depends: libc6 (>= 2.8), upstart-job
+Pre-Depends: dpkg (>= 1.15.7.2)
+Breaks: initramfs-tools (<< 0.92bubuntu23)
+Filename: pool/main/m/module-init-tools/module-init-tools_3.16-1ubuntu1_amd64.deb
+Size: 104926
+MD5sum: 84bcd3f56acc2bdc37fba3440f5d6cfe
+Description: tools for managing Linux kernel modules
+Original-Maintainer: Marco d'Itri <md@linux.it>
+SHA1: 1b7a0227858f7b949bd962f4752eccba987cc1f3
+SHA256: 8b668a805975d6e9ddc112714f96ea15c1e430296fe90e28edd64d3bd7420f58
+Homepage: http://www.kerneltools.org/
+Description-md5: c2ebfa781762b2057043b6049ac828e8
+Supported: 18m
+Task: minimal
+
+Package: libffi6
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 88
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libffi
+Version: 3.0.11~rc1-2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libffi/libffi6_3.0.11~rc1-2_amd64.deb
+Size: 19518
+MD5sum: 4d743493d026c3856d07d54fe3fc0e58
+Description: Foreign Function Interface library runtime
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+SHA1: 78828a7a3675f5f9eb07aff492eda56d30a69bc2
+SHA256: 82a6c85af286a8bfae56cb1c947dea30551908e2ac653969c47cd86909b9caab
+Description-md5: aa11fa9e12227fc9a1de7b2cb193c270
+Supported: 18m
+Task: minimal
+
+Package: libgdbm3
+Multi-Arch: same
+Priority: important
+Section: libs
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gdbm
+Version: 1.8.3-10
+Depends: libc6 (>= 2.2.5), dpkg (>= 1.15.4) | install-info
+Pre-Depends: multiarch-support
+Size: 35254
+Description: GNU dbm database routines (runtime version)
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://directory.fsf.org/project/gdbm/
+
+Package: libgcrypt11
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 604
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.5.0-1
+Depends: libc6 (>= 2.4), libgpg-error0 (>= 1.10)
+Pre-Depends: multiarch-support
+Suggests: rng-tools
+Size: 278638
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512, Tiger,
+ Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
+Package: libuuid1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 128
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: util-linux
+Version: 2.19.1-2ubuntu3
+Replaces: e2fsprogs (<< 1.34-1)
+Depends: passwd, libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Recommends: uuid-runtime
+Filename: pool/main/u/util-linux/libuuid1_2.19.1-2ubuntu3_amd64.deb
+Size: 13202
+MD5sum: 150eafd92f226440cfca497062f69abe
+Description: Universally Unique ID library
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: be9e3baa632c9f8b03a36b402468fdd01763c638
+SHA256: a29c6f8bd9d2c5be5402d25e145881a84c90be58a05e26d5ec7265fb2a32cfaa
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: cdcb90f3bb78d05cd58baab4e78716b2
+Supported: 18m
+Task: minimal
+
+Package: libtasn1-3
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 164
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.9-4
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 43506
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Homepage: http://www.gnu.org/software/libtasn1/
+
+Package: lsb-base
+Priority: required
+Section: misc
+Installed-Size: 88
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: lsb
+Version: 4.0-0ubuntu16
+Replaces: lsb (<< 2.0-6), lsb-core (<< 2.0-6)
+Depends: sed, ncurses-bin
+Conflicts: lsb (<< 2.0-6), lsb-core (<< 2.0-6)
+Filename: pool/main/l/lsb/lsb-base_4.0-0ubuntu16_all.deb
+Size: 10580
+MD5sum: f606df21356babbe37638a7f9b181fc7
+Description: Linux Standard Base 4.0 init script functionality
+Original-Maintainer: Chris Lawrence <lawrencc@debian.org>
+SHA1: 783d963151e2e6474b5d031d742b3df5d2e27343
+SHA256: 85daa4c211663a5b4b368532624e117fc490422809f13e95c403b56cd04ec1b0
+Homepage: http://www.linux-foundation.org/en/LSB
+Description-md5: 7fdfe57dd9f54e59f584ff71384235e9
+Supported: 18m
+Task: minimal
+
+Package: libcurl3-gnutls
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 564
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: curl
+Version: 7.21.6-3ubuntu3
+Replaces: libcurl4-gnutls
+Depends: libc6 (>= 2.11), libgcrypt11 (>= 1.5.0-0), libgnutls26 (>= 2.9.11-0), libgssapi-krb5-2 (>= 1.7+dfsg), libidn11 (>= 1.13), libldap-2.4-2 (>= 2.4.7), librtmp0 (>= 2.3), zlib1g (>= 1:1.1.4), ca-certificates
+Pre-Depends: multiarch-support
+Conflicts: libcurl4-gnutls
+Size: 221204
+Description: Multi-protocol file transfer library (GnuTLS)
+ libcurl is designed to be a solid, usable, reliable and portable
+ multi-protocol file transfer library.
+ .
+ SSL support is provided by GnuTLS.
+ .
+ This is the shared version of libcurl.
+Homepage: http://curl.haxx.se
+Original-Maintainer: Ramakrishnan Muthukrishnan <rkrishnan@debian.org>
+
+Package: cpp-4.6
+Priority: optional
+Section: interpreters
+Installed-Size: 11496
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-4.6
+Version: 4.6.1-9ubuntu3
+Replaces: gcc-4.6 (<< 4.6.1-9)
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), libc6 (>= 2.11), libgmp10, libmpc2, libmpfr4, zlib1g (>= 1:1.1.4)
+Suggests: gcc-4.6-locales (>= 4.6.1-8)
+Size: 4815572
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: procps
+Priority: required
+Section: admin
+Installed-Size: 824
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1:3.2.8-10ubuntu5
+Replaces: bsdutils (<< 2.9x-1), watch
+Provides: watch
+Depends: libc6 (>= 2.4), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908), upstart-job, lsb-base (>= 3.0-10), initscripts
+Recommends: psmisc
+Conflicts: libproc-dev (<< 1:1.2.6-2), pgrep (<< 3.3-5), procps-nonfree, w-bassman (<< 1.0-3), watch
+Filename: pool/main/p/procps/procps_3.2.8-10ubuntu5_amd64.deb
+Size: 233086
+MD5sum: 72f678ef5747de0a86a628a128fe0757
+Description: /proc file system utilities
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 89f1fd1321e01d2c4cecb17d46461d91b29f4ba3
+SHA256: fdde3ed93d56592c385a2c2a048fb06a320a6d8dc7a284eece0ed325e780642f
+Homepage: http://procps.sf.net/
+Description-md5: 943f3288c1aaa379fca73a3ff1a35278
+Supported: 18m
+Task: minimal
+
+Package: libgssapi-krb5-2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 356
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: krb5
+Version: 1.9.1+dfsg-1ubuntu1
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkrb5-3 (= 1.9.1+dfsg-1ubuntu1), libkrb5support0 (>= 1.7dfsg~beta2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.8)
+Size: 117722
+Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the MIT Kerberos
+ implementation of GSS-API used by applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+
+Package: python-minimal
+Essential: yes
+Priority: required
+Section: python
+Installed-Size: 212
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: python-defaults
+Version: 2.7.2-7ubuntu2
+Replaces: python (<= 2.4-1)
+Depends: python2.7-minimal (>= 2.7.2-3~), dpkg (>= 1.13.20)
+Recommends: python
+Breaks: idle (<< 2.6), python (<= 2.4-1), python-all (<< 2.6), python-all-dbg (<< 2.6), python-all-dev (<< 2.6), python-dbg (<< 2.6), python-dev (<< 2.6), python-examples (<< 2.6), python-support (<< 1.0.10ubuntu2), python2.5-minimal (<< 2.5.5-7), python2.6-minimal (<< 2.6.5~rc2-2), python3.1-minimal (<< 3.1.2~rc1-2)
+Conflicts: python-central (<< 0.5.5)
+Filename: pool/main/p/python-defaults/python-minimal_2.7.2-7ubuntu2_all.deb
+Size: 29860
+MD5sum: d53168f3aa8c680f8745d38ceae43d98
+Description: minimal subset of the Python language (default version)
+Original-Maintainer: Matthias Klose <doko@debian.org>
+SHA1: c683cefbb6456db186007d7322a7f4544f09382a
+SHA256: e32359f8b0b92453342b3ca84936b60a16f5a9acfd56445ce27461476e123dec
+Homepage: http://www.python.org/
+Description-md5: 200bc6d6d83361369f54f0e99818ec74
+Supported: 18m
+Task: minimal
+
+Package: ncurses-base
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 468
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: ncurses
+Version: 5.9-1ubuntu5
+Provides: ncurses-runtime
+Breaks: ncurses-term (<< 5.7+20100313-3)
+Conflicts: ncurses, ncurses-runtime
+Filename: pool/main/n/ncurses/ncurses-base_5.9-1ubuntu5_all.deb
+Size: 20094
+MD5sum: b0760d0a9d01b15e9674dec1ba82d63e
+Description: basic terminal type definitions
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 84ab8e3f6c5ae62e584ef69469cf0eba869ec75c
+SHA256: e9655c3dfea17e1d1ad203ce4450cc501cd8554f4e712309edf9a8d532d8d28b
+Homepage: http://invisible-island.net/ncurses/
+Description-md5: 2cbef17322c0de7f007682de54ca0d4a
+Supported: 18m
+Task: minimal
+
+Package: libpopt0
+Priority: important
+Section: libs
+Installed-Size: 512
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: popt
+Version: 1.16-1
+Replaces: popt
+Depends: libc6 (>= 2.8)
+Conflicts: libpopt-dev (<= 1.4-1), popt, rpm (<= 4.0.2-3)
+Size: 35114
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+Original-Maintainer: Paul Martin <pm@debian.org>
+Homepage: http://rpm5.org/
+
+Package: libpam0g
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 252
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: pam
+Version: 1.1.3-2ubuntu1
+Replaces: libpam0g-util
+Depends: libc6 (>= 2.8), debconf (>= 0.5) | debconf-2.0
+Pre-Depends: multiarch-support
+Suggests: libpam-doc
+Filename: pool/main/p/pam/libpam0g_1.1.3-2ubuntu1_amd64.deb
+Size: 56596
+MD5sum: 89be4ce31670f02b33902449e67c9e09
+Description: Pluggable Authentication Modules library
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+SHA1: 232e845b814a31f482baa019cf0a0df9fe95bef4
+SHA256: 50004cce630148363ac38a5b00cfa2bea1764f2bf3a98ae7349a3ff1396248db
+Homepage: http://pam.sourceforge.net/
+Description-md5: cde213c26c92740e33dbfebdc0a98a30
+Supported: 18m
+Task: minimal
+
+Package: libusb-0.1-4
+Priority: important
+Section: libs
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libusb
+Version: 2:0.1.12-18
+Replaces: libusb0
+Depends: libc6 (>= 2.4)
+Conflicts: libccid (<< 0.9.2-3), libusb0
+Filename: pool/main/libu/libusb/libusb-0.1-4_0.1.12-18_amd64.deb
+Size: 16920
+MD5sum: 5b421fb06e87de5d18546fc67c046506
+Description: userspace USB programming library
+ Library for programming USB applications without the knowledge
+ of Linux kernel internals.
+Original-Maintainer: Aurelien Jarno <aurel32@debian.org>
+Homepage: http://www.linux-usb.org/
+
+Package: libpython2.7
+Priority: optional
+Section: libs
+Installed-Size: 3080
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: python2.7
+Version: 2.7.2-5ubuntu1
+Replaces: python2.7 (<< 2.6)
+Depends: python2.7 (= 2.7.2-5ubuntu1), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.0)
+Filename: pool/main/p/python2.7/libpython2.7_2.7.2-5ubuntu1_amd64.deb
+Size: 1173780
+MD5sum: b56f4ffe76cffbe47855a51fdd3bc3b9
+Description: Shared Python runtime library (version 2.7)
+ Version 2.7 of the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libgpg-error0
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libgpg-error
+Version: 1.10-0.3ubuntu1
+Depends: libc6 (>= 2.2.5)
+Pre-Depends: multiarch-support
+Size: 14532
+Description: library for common error values and messages in GnuPG components
+ Library that defines common error values for all GnuPG
+ components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ pinentry, SmartCard Daemon and possibly more in the future.
+Homepage: http://www.gnupg.org/related_software/libgpg-error/
+Original-Maintainer: Jose Carlos Garcia Sogo <jsogo@debian.org>
+
+Package: perl-modules
+Priority: standard
+Section: perl
+Installed-Size: 24832
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: perl
+Version: 5.12.4-4
+Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libclass-isa-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libi18n-langtags-perl, libio-zlib-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-plainer-perl, libpod-simple-perl, libshell-perl, libswitch-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, podlators-perl
+Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libi18n-langtags-perl, libio-zlib-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, podlators-perl
+Depends: perl (>= 5.12.4-1)
+Recommends: libswitch-perl, libpod-plainer-perl, libclass-isa-perl
+Breaks: libansicolor-perl (<< 2.02), libarchive-tar-perl (<< 1.54), libattribute-handlers-perl (<< 0.87), libautodie-perl (<< 2.06.01), libcgi-pm-perl (<< 3.49-1squeeze1), libclass-isa-perl (<< 0.36), libcpanplus-perl (<< 0.90), libdigest-perl (<< 1.16), libextutils-cbuilder-perl (<< 0.2700), libextutils-command-perl (<< 1.16), libextutils-install-perl (<< 1.55), libextutils-parsexs-perl (<< 2.210000), libfile-path-perl (<< 2.08.01), libfile-spec-perl (<< 3.3101), libfile-temp-perl (<< 0.22), libi18n-langtags-perl (<< 0.35-1), libio-zlib-perl (<< 1.10), liblocale-codes-perl (<< 2.07), liblocale-maketext-perl (<< 1.14), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.89.01), libmath-complex-perl (<< 1.56), libmodule-build-perl (<< 0.360300), libmodule-corelist-perl (<< 2.50), libmodule-load-conditional-perl (<< 0.38), libmodule-load-perl (<< 0.16), libmodule-pluggable-perl (<< 3.9), libnet-perl (<= 1:1.22), libnet-ping-perl (<< 2.36), libparams-check-perl (<< 0.26-1), libparent-perl (<< 0.223), libparse-cpan-meta-perl (<< 1.40), libpod-escapes-perl (<< 1.04), libpod-parser-perl (<< 1.37), libpod-plainer-perl (<< 1.02), libpod-simple-perl (<< 3.14), libshell-perl (<< 0.72.01), libswitch-perl (<< 2.16), libtest-harness-perl (<< 3.17), libtest-simple-perl (<< 0.94), libthread-queue-perl (<< 2.11), libtime-local-perl (<< 1.1901.01), libunicode-collate-perl (<< 0.52.01), libversion-perl (<< 1:0.8200), podlators-perl (<< 2.3.1)
+Size: 4741610
+Description: Core Perl modules
+ Architecture independent Perl modules.  These modules are part of Perl and
+ required if the `perl' package is installed.
+ .
+ Note that this package only exists to save archive space and should be
+ considered an internal implementation detail of the `perl' package.
+ Other packages should not depend on `perl-modules' directly, they
+ should use `perl' (which depends on `perl-modules') instead.
+Original-Maintainer: Niko Tyni <ntyni@debian.org>
+
+Package: bsdutils
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 220
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: util-linux (2.19.1-2ubuntu3)
+Version: 1:2.19.1-2ubuntu3
+Depends: libc6 (>= 2.7)
+Recommends: bsdmainutils
+Filename: pool/main/u/util-linux/bsdutils_2.19.1-2ubuntu3_amd64.deb
+Size: 34708
+MD5sum: b17d1fc2bdbab4c91852642723aa2836
+Description: Basic utilities from 4.4BSD-Lite
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: 2dcd46f23036ca78dc8ab9518439fb7fde1f388e
+SHA256: 7bf20acd06f22f201611b55dc99e26c4bb72b1c3be4cdb560b4795be600aa835
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: 1bf4bce740174530b7953a9832a5268e
+Supported: 18m
+Task: minimal
+
+Package: sensible-utils
+Priority: required
+Section: utils
+Installed-Size: 132
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 0.0.6ubuntu2
+Replaces: debianutils (<= 2.32.3), manpages-pl (<= 20060617-3~)
+Filename: pool/main/s/sensible-utils/sensible-utils_0.0.6ubuntu2_all.deb
+Size: 8150
+MD5sum: fdc157f01187f363eaab3bd4f532d852
+Description: Utilities for sensible alternative selection
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: cc800cdfb2f347bb065355b77ce5beebdffcca71
+SHA256: 6df0b118cc13a6399279e0603202e30ded746210bca92d76450bba3a81d7d51d
+Description-md5: 762f81736340b99921c41ac6bb08e2b1
+Supported: 18m
+Task: minimal
+
+Package: libexpat1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 928
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: expat
+Version: 2.0.1-7ubuntu3
+Provides: libexpat-dev
+Depends: libexpat1 (= 2.0.1-7ubuntu3), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Size: 217054
+Description: XML parsing C library - development kit
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
+Homepage: http://expat.sourceforge.net
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: libc6-dev
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Installed-Size: 11888
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: eglibc
+Version: 2.13-20ubuntu5
+Provides: libc-dev
+Depends: libc6 (= 2.13-20ubuntu5), libc-dev-bin (= 2.13-20ubuntu5), linux-libc-dev
+Recommends: gcc | c-compiler
+Suggests: glibc-doc, manpages-dev
+Breaks: binutils (<< 2.20.1-1), binutils-gold (<< 2.20.1-11), cmake (<< 2.8.4+dfsg.1-5), gcc-4.4 (<< 4.4.6-3ubuntu1), gcc-4.4-base (<< 4.4.6-3ubuntu1), gcc-4.5 (<< 4.5.3-1ubuntu2), gcc-4.5-base (<< 4.5.3-1ubuntu2), gcc-4.6 (<< 4.6.0-12), gcj-4.4-base (<< 4.4.6-2ubuntu2), gcj-4.5-base (<< 4.5.3-1ubuntu2), gnat-4.4-base (<< 4.4.6-1ubuntu3), libhwloc-dev (<< 1.2-3), libjna-java (<< 3.2.7-4), liblouis-dev (<< 2.3.0-2), liblouisxml-dev (<< 2.4.0-2), make (<< 3.81-8.1), pkg-config (<< 0.26-1)
+Size: 2575450
+Description: Embedded GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Homepage: http://www.eglibc.org
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: bzip2
+Priority: optional
+Section: utils
+Installed-Size: 160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.0.5-6ubuntu1
+Replaces: libbz2 (<< 0.9.5d-3)
+Depends: libbz2-1.0 (= 1.0.5-6ubuntu1), libc6 (>= 2.4)
+Suggests: bzip2-doc
+Size: 38570
+Description: high-quality block-sorting file compressor - utilities
+ bzip2 is a freely available, patent free, high-quality data compressor.
+ It typically compresses files to within 10% to 15% of the best available
+ techniques, whilst being around twice as fast at compression and six
+ times faster at decompression.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+Homepage: http://www.bzip.org/
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+
+Package: vim-common
+Priority: important
+Section: editors
+Installed-Size: 372
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: vim
+Version: 2:7.3.154+hg~74503f6ee649-2ubuntu3
+Depends: libc6 (>= 2.4)
+Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
+Filename: pool/main/v/vim/vim-common_7.3.154+hg~74503f6ee649-2ubuntu3_amd64.deb
+Size: 86802
+MD5sum: 12f25db062526622ff50ff601a566d66
+Description: Vi IMproved - Common files
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains files shared by all non GUI-enabled vim
+ variants (vim and vim-tiny currently) available in Debian.
+ Examples of such shared files are: manpages, common executables
+ like xxd, and configuration files.
+Homepage: http://www.vim.org/
+Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: openssl
+Priority: optional
+Section: utils
+Installed-Size: 1020
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.0.0e-2ubuntu4
+Depends: libc6 (>= 2.7), libssl1.0.0 (>= 1.0.0)
+Suggests: ca-certificates
+Size: 516448
+Description: Secure Socket Layer (SSL) binary and related cryptographic tools
+ This package contains the openssl binary and related tools.
+ .
+ It is part of the OpenSSL implementation of SSL.
+ .
+ You need it to perform certain cryptographic actions like:
+  -  Creation of RSA, DH and DSA key parameters;
+  -  Creation of X.509 certificates, CSRs and CRLs;
+  -  Calculation of message digests;
+  -  Encryption and decryption with ciphers;
+  -  SSL/TLS client and server tests;
+  -  Handling of S/MIME signed or encrypted mail.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: libquadmath0
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 256
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-4.6
+Version: 4.6.1-9ubuntu3
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), libc6 (>= 2.10)
+Pre-Depends: multiarch-support
+Size: 126052
+Description: GCC Quad-Precision Math Library
+ A library, which provides quad-precision mathematical functions on targets
+ supporting the __float128 datatype. The library is used to provide on such
+ targets the REAL(16) type in the GNU Fortran compiler.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: ncurses-bin
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 568
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: ncurses
+Version: 5.9-1ubuntu5
+Pre-Depends: libc6 (>= 2.4), libncurses5 (>= 5.6+20071013), libtinfo5 (>= 5.7+20090711)
+Filename: pool/main/n/ncurses/ncurses-bin_5.9-1ubuntu5_amd64.deb
+Size: 150880
+MD5sum: c378ed2560363148b9d57137c4991d09
+Description: terminal-related programs and man pages
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 82bb09143996afb864809a6ef6cd2dae9ac79b06
+SHA256: 7e149c5e5b017f35b1ad48edf85187989438cc8cea09f633ab91f088dcd6af94
+Homepage: http://invisible-island.net/ncurses/
+Description-md5: 682ee2624c08c54a53ecaefd778a4d86
+Supported: 18m
+Task: minimal
+
+Package: perl-base
+Essential: yes
+Priority: required
+Section: perl
+Installed-Size: 7592
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: perl
+Version: 5.12.4-4
+Replaces: libperl5.8 (<< 5.8.0-20), libscalar-list-utils-perl, libxsloader-perl, perl (<< 5.10.1-12), perl-modules (<< 5.10.1-1)
+Provides: libscalar-list-utils-perl, libxsloader-perl, perl5-base, perlapi-5.12.3, perlapi-5.12.4
+Pre-Depends: libc6 (>= 2.11), dpkg (>= 1.14.20)
+Suggests: perl
+Breaks: autoconf2.13 (<< 2.13-45), doc-base (<< 0.10.0), libfile-spec-perl (<< 3.3101), libmarc-charset-perl (<< 1.2), libscalar-list-utils-perl (<< 1:1.22), libxsloader-perl (<< 0.10)
+Conflicts: safe-rm (<< 0.8)
+Filename: pool/main/p/perl/perl-base_5.12.4-4_amd64.deb
+Size: 1429812
+MD5sum: cbd4e1dd2c0e13569da052393faeaa67
+Description: minimal Perl system
+Original-Maintainer: Niko Tyni <ntyni@debian.org>
+SHA1: 8630be2f6be93174b66c706a0ef479b256ac954a
+SHA256: 82a02ebb28ea97b2d26e3d95e6535d22b88a4938a49f7ecd0a4a536cc67308d6
+Description-md5: 7c818331fe8bc53134bb22330b07f5ae
+Supported: 18m
+Task: minimal
+
+Package: sysv-rc
+Priority: required
+Section: admin
+Installed-Size: 304
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: sysvinit
+Version: 2.88dsf-13.10ubuntu4
+Replaces: file-rc
+Depends: debconf (>= 0.5) | debconf-2.0, sysvinit-utils (>= 2.86.ds1-62), insserv (>> 1.12.0-10)
+Recommends: lsb-base (>= 3.2-14)
+Suggests: sysv-rc-conf, bum
+Breaks: initscripts (<< 2.86.ds1-63)
+Conflicts: file-rc
+Filename: pool/main/s/sysvinit/sysv-rc_2.88dsf-13.10ubuntu4_all.deb
+Size: 44074
+MD5sum: 744f1963f1f07725be68438e1f485341
+Description: System-V-like runlevel change mechanism
+Original-Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
+SHA1: ae17c80903f87dbdc83ee5ba50c309f24ab0a71a
+SHA256: 699a322ea22eb732556ce2bc7fe8cda56f55ee12b003349a14d1193a3d9e5bb1
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Description-md5: 195f2d617082a23f37cee0f50784eef9
+Supported: 18m
+Task: minimal
+
+Package: liberror-perl
+Priority: optional
+Section: perl
+Installed-Size: 96
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.17-1
+Depends: perl (>= 5.6.0-16)
+Size: 23762
+Description: Perl module for error/exception handling in an OO-ish way
+ This module provides two interfaces.  Firstly "Error" provides a
+ procedural interface to exception handling.  Secondly "Error" is a
+ base class for errors/exceptions that can either be thrown, for
+ subsequent catch, or can simply be recorded.
+ .
+ Errors in the class "Error" should not be thrown directly, but the
+ user should throw errors from a sub-class of "Error".
+Original-Maintainer: Clint Burfoot <clint@burfoot.info>
+
+Package: apt
+Priority: important
+Section: admin
+Installed-Size: 3408
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.8.16~exp5ubuntu13
+Replaces: manpages-pl (<< 20060617-3~)
+Depends: ubuntu-keyring, libapt-pkg4.11 (>= 0.8.16~exp5ubuntu13), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4), gnupg
+Suggests: aptitude | synaptic | wajig, dpkg-dev, apt-doc, bzip2, lzma, python-apt
+Conflicts: python-apt (<< 0.7.93.2~)
+Filename: pool/main/a/apt/apt_0.8.16~exp5ubuntu13_amd64.deb
+Size: 1052964
+MD5sum: 3af35190986fd7ea443aca80c34286b9
+Description: APT's commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+ .
+ These include:
+  * apt-get for retrieval of packages and information about them
+    from authenticated sources and for installation, upgrade and
+    removal of packages together with their dependencies
+  * apt-cache for querying available information about installed
+    as well as installable packages
+  * apt-cdrom to use removable media as a source for packages
+  * apt-config as an interface to the configuration settings
+  * apt-key as an interface to manage authentication keys
+Original-Maintainer: APT Development Team <deity@lists.debian.org>
+
+Package: libswitch-perl
+Priority: optional
+Section: perl
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.16-1
+Depends: perl, perl-modules
+Size: 20618
+Description: A switch statement for Perl
+ The Switch.pm module implements a generalized case mechanism that covers many
+ possible combinations of switch and case values.
+ .
+ This is an obsolete module provided for compatiblity since it is being
+ removed from the core. For perl 5.10 and above the "given/when" builtins
+ are much preferred.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Switch/
+
+Package: manpages-dev
+Priority: optional
+Section: doc
+Installed-Size: 3312
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: manpages
+Version: 3.27-1ubuntu2
+Replaces: glibc-doc (<< 2.12.1-0ubuntu11)
+Depends: manpages
+Suggests: man-browser
+Size: 1626662
+Description: Manual pages about using GNU/Linux for development
+ These man pages describe the Linux programming interface, including
+ these two sections:
+  2 = Linux system calls.
+  3 = Library calls (note that a more comprehensive source of information
+      may be found in the glibc-doc package).
+Original-Maintainer: Martin Schulze <joey@debian.org>
+
+Package: libk5crypto3
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 268
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: krb5
+Version: 1.9.1+dfsg-1ubuntu1
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.4), libkrb5support0 (>= 1.7dfsg~beta2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Breaks: libgssapi-krb5-2 (<= 1.8~aa), libkrb5-3 (<= 1.8~aa), libkrb53 (<< 1.6.dfsg.4~beta1-9)
+Size: 83866
+Description: MIT Kerberos runtime libraries - Crypto Library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime cryptography libraries used by
+ applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+
+Package: bc
+Priority: standard
+Section: math
+Installed-Size: 320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.06.95-2
+Depends: libc6 (>= 2.4), libncurses5 (>= 5.6+20071006-3), libreadline6, dpkg (>= 1.15.4) | install-info
+Size: 111518
+Description: The GNU bc arbitrary precision calculator language
+ GNU bc is an interactive algebraic language with arbitrary precision which
+ follows the POSIX 1003.2 draft standard, with several extensions including
+ multi-character variable names, an `else' statement and full Boolean
+ expressions.  GNU bc does not require the separate GNU dc program.
+ Home page: http://directory.fsf.org/GNU/bc.html
+Original-Maintainer: John G. Hasler <jhasler@debian.org>
+
+Package: netbase
+Priority: important
+Section: admin
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 4.45ubuntu3
+Depends: lsb-base (>= 3.0-6), initscripts, upstart-job
+Recommends: ifupdown
+Conflicts: inetutils-inetd (<< 2:1.4.3+20060719-3), openbsd-inetd (<< 0.20050402-3)
+Size: 14820
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
+Original-Maintainer: Marco d'Itri <md@linux.it>
+
+Package: libdrm2
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 124
+Origin: Ubuntu
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libdrm
+Version: 2.4.26-1ubuntu1
+Depends: libc6 (>= 2.7)
+Pre-Depends: multiarch-support
+Filename: pool/main/libd/libdrm/libdrm2_2.4.26-1ubuntu1_amd64.deb
+Size: 25364
+MD5sum: 9b9afa2de2b42a716ba1d4625b89b320
+Description: Userspace interface to kernel DRM services -- runtime
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+SHA1: 3c36771e553770d20e60fc07534063cf2c86030a
+SHA256: 141680674c4ea7a57fb2fc22fead5fb0f16b71a8ef618a4fd55f57407bf7d0a8
+Description-md5: aefc4200d84a6f2aee6f342bdd88dc24
+Supported: 18m
+Task: minimal
+
+Package: libdrm-nouveau1a
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 112
+Origin: Ubuntu
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libdrm
+Version: 2.4.26-1ubuntu1
+Depends: libc6 (>= 2.2.5), libdrm2 (>= 2.4.3)
+Pre-Depends: multiarch-support
+Conflicts: libdrm-nouveau1
+Filename: pool/main/libd/libdrm/libdrm-nouveau1a_2.4.26-1ubuntu1_amd64.deb
+Size: 13920
+MD5sum: d5ff1151b7961f9022430b571760adf1
+Description: Userspace interface to nouveau-specific kernel DRM services -- runtime
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+SHA1: 192669f935c25d0ea2e113438bb371e976819368
+SHA256: ce8586b60b9db35ee243507d1bc712b804371fe6e494b6a6355dc914f87333b2
+Description-md5: e9d35521833d93a9e60b0579def3745c
+Supported: 18m
+Task: minimal
+
+Package: swig
+Priority: optional
+Section: interpreters
+Installed-Size: 5288
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: swig1.3
+Version: 2.0.4+really1.3.40-3ubuntu4
+Replaces: swig1.3
+Depends: libc6 (>= 2.8), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Suggests: swig-examples, swig-doc
+Size: 1028564
+Description: Generate scripting interfaces to C/C++ code
+ SWIG is a compiler that makes it easy to integrate C and C++ code
+ with other languages including Perl, PHP, Tcl, Ruby, Python, Java,
+ Guile, Mzscheme, Chicken, OCaml, and C#.
+ .
+ Swig takes a set of ANSI C/C++ declarations and generates an
+ interface for them to your favorite scripting language.
+Homepage: http://www.swig.org/
+Original-Maintainer: Torsten Landschoff <torsten@debian.org>
+
+Package: libpam-modules
+Multi-Arch: same
+Priority: required
+Section: admin
+Installed-Size: 1016
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: pam
+Version: 1.1.3-2ubuntu1
+Replaces: libpam-umask, libpam0g-util
+Provides: libpam-mkhomedir, libpam-motd, libpam-umask
+Pre-Depends: libc6 (>= 2.8), libdb5.1, libpam0g (>= 1.1.3-2), libselinux1 (>= 2.0.85), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.1.3-2ubuntu1)
+Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
+Filename: pool/main/p/pam/libpam-modules_1.1.3-2ubuntu1_amd64.deb
+Size: 274486
+MD5sum: 7668f3fbc8f8a3e2a99cc3c2ad3838d9
+Description: Pluggable Authentication Modules for PAM
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+SHA1: 933e16c88a17131581c4984a438517e55b6b2d74
+SHA256: 55d68bd7910f873683fad0e292ee803544a2515ecb49f53835b43c14a6f78c08
+Homepage: http://pam.sourceforge.net/
+Description-md5: a8a6e0f8ceca34ecc582fdb9e0db577e
+Supported: 18m
+Task: minimal
+
+Package: tzdata
+Multi-Arch: foreign
+Priority: required
+Section: libs
+Installed-Size: 4112
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 2011k-1
+Replaces: libc0.1, libc0.3, libc6, libc6.1
+Provides: tzdata-wheezy
+Depends: debconf (>= 0.5) | debconf-2.0
+Filename: pool/main/t/tzdata/tzdata_2011k-1_all.deb
+Size: 400526
+MD5sum: d5b868bbc3b957278a3effa680ef6451
+Description: time zone and daylight-saving time data
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+SHA1: 7857ba69cbac1ea88dabf23d26346effdacf755c
+SHA256: 1b47f04d9c211ca99d0b18d505ce8d2794b7a30a7e0037edbe2da382f74cbf99
+Description-md5: a77a3cc9a67658dd7cfdc6547391b8f8
+Supported: 18m
+Task: minimal
+
+Package: libudev0
+Multi-Arch: same
+Priority: required
+Section: admin
+Installed-Size: 228
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: udev
+Version: 173-0ubuntu4
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Filename: pool/main/u/udev/libudev0_173-0ubuntu4_amd64.deb
+Size: 30926
+MD5sum: 0c426cdca988d6c91e9c6ce59b27d703
+Description: udev library
+SHA1: 7e0053f561fdb47aeb67f20107a31e189f5e9915
+SHA256: 946128296d7d8d4439b27dad847b07de1168cd5af63dd17df15e11bde624240f
+Homepage: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+Description-md5: ba1b55d68150d3122669d1c09904cf13
+Supported: 18m
+Task: minimal
+
+Package: python
+Priority: important
+Section: python
+Installed-Size: 768
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: python-defaults
+Version: 2.7.2-7ubuntu2
+Replaces: python-dev (<< 2.6.5-2)
+Provides: python-ctypes, python-email, python-importlib, python-profiler, python-wsgiref
+Depends: python2.7 (>= 2.7.2-3~), python-minimal (= 2.7.2-7ubuntu2)
+Suggests: python-doc (= 2.7.2-7ubuntu2), python-tk (= 2.7.2-7ubuntu2)
+Breaks: python-bz2 (<< 1.1-8), python-csv (<< 1.0-4), python-email (<< 2.5.5-3), update-manager (<= 0.200.5-1)
+Conflicts: python-central (<< 0.5.5)
+Filename: pool/main/p/python-defaults/python_2.7.2-7ubuntu2_all.deb
+Size: 165792
+MD5sum: a4b881e98e39f213bc8bbcfac566dd21
+Description: interactive high-level object-oriented language (default version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://www.python.org/
+
+Package: ifupdown
+Priority: required
+Section: admin
+Installed-Size: 260
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 0.7~alpha5.1ubuntu5
+Replaces: netbase (<< 4.00)
+Depends: iproute (>= 20071016-1), libc6 (>= 2.7), upstart-job, lsb-base, initscripts (>= 2.88dsf-13.3)
+Suggests: dhcp3-client | dhcp-client, ppp, rdnssd, net-tools
+Conflicts: dhcp-client (<< 3.0)
+Filename: pool/main/i/ifupdown/ifupdown_0.7~alpha5.1ubuntu5_amd64.deb
+Size: 47580
+MD5sum: 348caf484871056016bf5dc54c160c75
+Description: high level tools to configure network interfaces
+Original-Maintainer: Andrew O. Shadoura <bugzilla@tut.by>
+SHA1: 18cf01c86c777ddd6f56f542671192b1b47f71e4
+SHA256: 80cd0ff6af043e47baf56074e5dd4c42252953fc4680032f8cc74dd1e5f0f85a
+Description-md5: 442edbd184a6e1febc9b203604eb38f4
+Supported: 18m
+Task: minimal
+
+Package: libxext6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxext
+Version: 2:1.3.0-3
+Depends: libc6 (>= 2.4), libx11-6
+Pre-Depends: multiarch-support
+Size: 34726
+Description: X11 miscellaneous extension library
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXext
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: mountall
+Priority: required
+Section: admin
+Installed-Size: 336
+Origin: Ubuntu
+Maintainer: Scott James Remnant <scott@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 2.31
+Replaces: upstart (<< 0.6.3-2)
+Depends: makedev, udev, plymouth, coreutils (>= 7.1), libc6 (>= 2.9), libdbus-1-3 (>= 1.2.16), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libplymouth2 (>= 0.8.1-3), libudev0 (>= 151)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Breaks: initscripts (<< 2.88dsf-13.3), policycoreutils (<< 2.0.69-2ubuntu4), usplash (<< 0.5.47)
+Filename: pool/main/m/mountall/mountall_2.31_amd64.deb
+Size: 65984
+MD5sum: d42f0cd85361486c63425792bff8d234
+Description: filesystem mounting tool
+SHA1: 66f6d9e6fee3abbd7432c1297743a1565e745632
+SHA256: f365cba78e8c3d45c2ce835f73ee3b0604dcb7210e43edda828a33dcc2d343d0
+Description-md5: b5b5a27fc0e8063ef1226a39fb8ecf70
+Supported: 18m
+Task: minimal
+
+Package: libc-dev-bin
+Multi-Arch: foreign
+Priority: optional
+Section: libdevel
+Installed-Size: 388
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: eglibc
+Version: 2.13-20ubuntu5
+Replaces: libc0.1-dev, libc0.3-dev, libc6-dev, libc6.1-dev
+Depends: libc6 (>> 2.13~), libc6 (<< 2.14)
+Recommends: manpages-dev
+Size: 82084
+Description: Embedded GNU C Library: Development binaries
+ This package contains utility programs related to the GNU C Library
+ development package.
+Homepage: http://www.eglibc.org
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: libapt-pkg4.11
+Priority: important
+Section: admin
+Installed-Size: 1388
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: apt
+Version: 0.8.16~exp5ubuntu13
+Depends: libc6 (>= 2.8), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.2.3)
+Filename: pool/main/a/apt/libapt-pkg4.11_0.8.16~exp5ubuntu13_amd64.deb
+Size: 518490
+MD5sum: aa09079942fadd27e4d3358decadd607
+Description: APT's package managment runtime library
+ This library provides the common functionality for searching and
+ managing packages as well as information about packages.
+ Higher-level package managers can depend upon this library.
+ .
+ This includes:
+  * retrieval of information about packages from multiple sources
+  * retrieval of packages and all dependent packages
+    needed to satisfy a request either through an internal
+    solver or by interfacing with an external one
+  * authenticating the sources and validating the retrieved data
+  * installation and removal of packages in the system
+  * providing different transports to retrieve data over cdrom, ftp,
+    http, rsh as well as an interface to add more transports like
+    https (apt-transport-https) and debtorrent (apt-transport-debtorrent).
+Original-Maintainer: APT Development Team <deity@lists.debian.org>
+
+Package: diffutils
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 1436
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1:3.0-1
+Replaces: diff
+Pre-Depends: libc6 (>= 2.4)
+Suggests: diffutils-doc, wdiff
+Filename: pool/main/d/diffutils/diffutils_3.0-1_amd64.deb
+Size: 193750
+MD5sum: 91d6ebee7aa69ba86a51ee2ab9cd2096
+Description: File comparison utilities
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+SHA1: 054c01651af1962ed98db58eed0233c4171db775
+SHA256: 919da1df68028e65305a541ea3f1a838709f9b85095a23baf3d4dbd18c653603
+Homepage: http://www.gnu.org/software/diffutils/
+Description-md5: 5cf0bc18e36aa2957e62b309d6aa34f9
+Supported: 18m
+Task: minimal
+
+Package: linux-libc-dev
+Multi-Arch: same
+Priority: optional
+Section: devel
+Installed-Size: 4584
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux
+Version: 3.0.0-12.20
+Replaces: dvb-dev (<< 1.0.1-6), libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), libdrm-dev, linux-kernel-headers
+Provides: linux-kernel-headers
+Conflicts: amd64-libs-dev (<= 1.1), dvb-dev (<< 1.0.1-6), libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), linux-kernel-headers
+Size: 805938
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+
+Package: tar
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 720
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.25-3
+Replaces: cpio (<< 2.4.2-39)
+Pre-Depends: libc6 (>= 2.8)
+Suggests: bzip2, ncompress, xz-utils
+Breaks: dpkg-dev (<< 1.14.26)
+Conflicts: cpio (<= 2.4.2-38)
+Filename: pool/main/t/tar/tar_1.25-3_amd64.deb
+Size: 219722
+MD5sum: da3c08e08e9d85d31c23a9abf1dd6be1
+Description: GNU version of the tar archiving utility
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+SHA1: 38299bc00b7845ac5d171c52f302bf15883da7a0
+SHA256: e3754befe84f97b51f2295bd74e62da93886b327b5ed62fd36b27d5cb31677ac
+Description-md5: 48033bf96442788d1f697785773ad9bb
+Supported: 18m
+Task: minimal
+
+Package: gcc-4.6
+Priority: optional
+Section: devel
+Installed-Size: 15840
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.6.1-9ubuntu3
+Provides: c-compiler
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), cpp-4.6 (= 4.6.1-9ubuntu3), binutils (>= 2.21.51~), libgcc1 (>= 1:4.6.1-9ubuntu3), libgomp1 (>= 4.6.1-9ubuntu3), libquadmath0 (>= 4.6.1-9ubuntu3), libc6 (>= 2.11), libgmp10, libmpc2, libmpfr4, zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Suggests: gcc-4.6-multilib, libmudflap0-4.6-dev (>= 4.6.1-9ubuntu3), gcc-4.6-doc (>= 4.6.1-8), gcc-4.6-locales (>= 4.6.1-8), libgcc1-dbg, libgomp1-dbg, libquadmath0-dbg, libmudflap0-dbg, binutils-gold (>= 2.21.51~)
+Size: 7513944
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libclass-isa-perl
+Priority: optional
+Section: perl
+Installed-Size: 68
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.36-1
+Depends: perl
+Size: 11902
+Description: report the search path for a class's ISA tree
+ Suppose you have a class (like Food::Fish::Fishstick) that is derived, via
+ its @ISA, from one or more superclasses (as Food::Fish::Fishstick is from
+ Food::Fish, Life::Fungus, and Chemicals), and some of those superclasses may
+ themselves each be derived, via its @ISA, from one or more superclasses (as
+ above).
+ .
+ When, then, you call a method in that class ($fishstick->calories), Perl
+ first searches there for that method, but if it's not there, it goes
+ searching in its superclasses, and so on, in a depth-first (or maybe
+ "height-first" is the word) search. In the above example, it'd first look in
+ Food::Fish, then Food, then Matter, then Life::Fungus, then Life, then
+ Chemicals.
+ .
+ This library, Class::ISA, provides functions that return that list -- the
+ list (in order) of names of classes Perl would search to find a method, with
+ no duplicates.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Class-ISA/
+
+Package: libdrm-radeon1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 116
+Origin: Ubuntu
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libdrm
+Version: 2.4.26-1ubuntu1
+Depends: libc6 (>= 2.3.4), libdrm2 (>= 2.4.3)
+Pre-Depends: multiarch-support
+Filename: pool/main/libd/libdrm/libdrm-radeon1_2.4.26-1ubuntu1_amd64.deb
+Size: 14842
+MD5sum: abf9b0f0f4bd8e0caee9a9c2785a923f
+Description: Userspace interface to radeon-specific kernel DRM services -- runtime
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+SHA1: 9420db056b5f244bf0e2df7109c9bc77a6416441
+SHA256: 5c587b04ffd5a4c0a2bb16b45d2cd0a5e6724b0e34d0e7effb23489cc072b8a8
+Description-md5: fbdefd428f29bf05163182b24d86f2a4
+Supported: 18m
+Task: minimal
+
+Package: libmount1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 240
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: util-linux
+Version: 2.19.1-2ubuntu3
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.8), libselinux1 (>= 1.32)
+Pre-Depends: multiarch-support
+Filename: pool/main/u/util-linux/libmount1_2.19.1-2ubuntu3_amd64.deb
+Size: 58950
+MD5sum: 419c81ea0e0f92109674e08cf218832c
+Description: block device id library
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: 73318f0bbaee07ae8a410d9409fdccdd0e2a0610
+SHA256: f4386ba21f2ce914d77cd18edfc6f8b1886059138e48e17906e7a90d38dfc80a
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: 8f605597a2fb2fd7bffd09db537dd040
+Supported: 18m
+Task: minimal
+
+Package: zlib1g
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 184
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: zlib
+Version: 1:1.2.3.4.dfsg-3ubuntu3
+Provides: libz1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Conflicts: zlib1 (<= 1:1.0.4-7)
+Filename: pool/main/z/zlib/zlib1g_1.2.3.4.dfsg-3ubuntu3_amd64.deb
+Size: 52994
+MD5sum: af0e2a7852310f83e8018a7dc3302669
+Description: compression library - runtime
+Original-Maintainer: Mark Brown <broonie@debian.org>
+SHA1: cfb85e0e7686051840de690f6456c272c2716c1a
+SHA256: 4f6dd5e3c234a3e7ba79074e49ecac28438f7bac52dd4a381f94bb24ef41bec9
+Homepage: http://zlib.net/
+Description-md5: 567f396aeeb2b2b63295099aed237057
+Supported: 18m
+Task: minimal
+
+Package: adduser
+Priority: required
+Section: admin
+Installed-Size: 492
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Version: 3.112+nmu1ubuntu5
+Replaces: manpages-it (<< 0.3.4-2), manpages-pl (<= 20051117-1)
+Depends: perl-base (>= 5.6.0), passwd (>= 1:4.0.12), debconf | debconf-2.0
+Recommends: ecryptfs-utils (>= 67-1)
+Suggests: liblocale-gettext-perl, perl-modules
+Filename: pool/main/a/adduser/adduser_3.112+nmu1ubuntu5_all.deb
+Size: 99260
+MD5sum: c3796b7ec6d927149fe5e74c13a3704f
+Description: add and remove users and groups
+Original-Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
+SHA1: 3f298405cde3c3631964295e9ab91487dea6c987
+SHA256: e102c02b97c0b350da56ba46e5273a429d548f8a22314ad1b7d7a6fc55704df2
+Homepage: http://alioth.debian.org/projects/adduser/
+Description-md5: 7965b5cd83972a254552a570bcd32c93
+Supported: 18m
+Task: minimal
+
+Package: libxcb1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 184
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxcb
+Version: 1.7-3
+Depends: libc6 (>= 2.4), libxau6, libxdmcp6
+Pre-Depends: multiarch-support
+Breaks: libxcb-xlib0
+Size: 40866
+Description: X C Binding
+ This package contains the library files needed to run software using libxcb,
+ the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Original-Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Homepage: http://xcb.freedesktop.org
+
+Package: locales
+Priority: required
+Section: libs
+Installed-Size: 9100
+Origin: Ubuntu
+Maintainer: Martin Pitt <martin.pitt@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: langpack-locales
+Version: 2.13+git20110622-2
+Replaces: base-config, belocs-locale-data, belocs-locales-bin, libc6 (<< 2.3.6-0ubuntu6), libc6.1 (<< 2.3.6-0ubuntu6)
+Depends: libc6 (>= 2.9-0ubuntu10) | libc6.1 (>= 2.9-0ubuntu10)
+Conflicts: base-config, belocs-locale-data
+Filename: pool/main/l/langpack-locales/locales_2.13+git20110622-2_all.deb
+Size: 3347522
+MD5sum: fe5391f66052b21a7988e9fc97ad2f88
+Description: common files for locale support
+SHA1: e5423d12799792396a92764cad0f37e5273e3959
+SHA256: e43db01fb709ebff0bf4805ffc8751f2a260f93fabc26b245edec8967352d4d2
+Description-md5: cd9b6b54ca8243d6f6ef9d4c4870927f
+Supported: 18m
+Task: minimal
+
+Package: traceroute
+Priority: important
+Section: net
+Installed-Size: 196
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:2.0.15-1
+Depends: libc6 (>= 2.4)
+Conflicts: traceroute-nanog (<< 1:2.0.13-3)
+Size: 54316
+Description: Traces the route taken by packets over an IPv4/IPv6 network
+ The traceroute utility displays the route used by IP packets on their way to a
+ specified network (or Internet) host. Traceroute displays the IP number and
+ host name (if possible) of the machines along the route taken by the packets.
+ Traceroute is used as a network debugging tool. If you're having network
+ connectivity problems, traceroute will show you where the trouble is coming
+ from along the route.
+ .
+ Install traceroute if you need a tool for diagnosing network connectivity
+ problems.
+Original-Maintainer: Daniel Baumann <daniel@lists.debian-maintainers.org>
+Homepage: http://traceroute.sourceforge.net/
+
+Package: python2.7
+Priority: optional
+Section: python
+Installed-Size: 9932
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.7.2-5ubuntu1
+Replaces: python-profiler (<= 2.7.1-2)
+Provides: python2.7-celementtree, python2.7-cjkcodecs, python2.7-ctypes, python2.7-elementtree, python2.7-profiler, python2.7-wsgiref
+Depends: python2.7-minimal (= 2.7.2-5ubuntu1), mime-support, libbz2-1.0, libc6 (>= 2.11), libdb4.8, libexpat1 (>= 1.95.8), libncursesw5 (>= 5.6+20070908), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.5.9), libtinfo5 (>= 5.6+20070908)
+Suggests: python2.7-doc, binutils
+Conflicts: python-profiler (<= 2.7.1-2)
+Filename: pool/main/p/python2.7/python2.7_2.7.2-5ubuntu1_amd64.deb
+Size: 2596990
+MD5sum: 982e92cafd9ec92e180eab0a13a31a3f
+Description: An interactive high-level object-oriented language (version 2.7)
+ Version 2.7 of the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Python-Version: 2.7
+
+Package: manpages
+Priority: important
+Section: doc
+Installed-Size: 1128
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 3.27-1ubuntu2
+Replaces: bind, rsh-server (<< 0.10-7)
+Suggests: man-browser
+Size: 570900
+Description: Manual pages about using a GNU/Linux system
+ This package contains GNU/Linux manual pages for these sections:
+  4 = Devices (e.g. hd, sd).
+  5 = File formats and protocols, syntaxes of several system
+      files (e.g. wtmp, /etc/passwd, nfs).
+  7 = Conventions and standards, macro packages, etc.
+      (e.g. nroff, ascii).
+ .
+ Sections 1, 6 and 8 are provided by the respective applications. This
+ package only includes the intro man page describing the section.
+ .
+ The man pages describe syntaxes of several system files.
+Original-Maintainer: Martin Schulze <joey@debian.org>
+
+Package: libgcc1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 132
+Origin: Ubuntu
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: gcc-4.6 (4.6.1-9ubuntu3)
+Version: 1:4.6.1-9ubuntu3
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), libc6 (>= 2.2.5)
+Pre-Depends: multiarch-support
+Breaks: gcc-4.1, gcc-4.3, gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: pool/main/g/gcc-4.6/libgcc1_4.6.1-9ubuntu3_amd64.deb
+Size: 42570
+MD5sum: 0654fba8da917eb8941fb0fca75fd60f
+Description: GCC support library
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+SHA1: b6c9812c96af86ad7c8f2ba731a9d0f2804febd5
+SHA256: d58e35aa7370872cb66cfce2456633ebf5679cc478866954689020938d3c58c5
+Homepage: http://gcc.gnu.org/
+Description-md5: bbd60d723e97d8e06c04228ee4c76f10
+Supported: 18m
+Task: minimal
+
+Package: libklibc
+Priority: required
+Section: libs
+Installed-Size: 148
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: klibc
+Version: 1.5.22-1ubuntu2
+Filename: pool/main/k/klibc/libklibc_1.5.22-1ubuntu2_amd64.deb
+Size: 44254
+MD5sum: 6cfd07584a8eba075fd1c9944cba050f
+Description: minimal libc subset for use with initramfs
+Original-Maintainer: maximilian attems <maks@debian.org>
+SHA1: 1fab7dbd70f11dd7ee935fd825db3d6655471020
+SHA256: 52f9d494128b9c65bea6ca7c1623df28a2be3048ae922780ebd5c2b51c3ed2fb
+Description-md5: c02e596a4e5bef99d28f7ec64ab27758
+Supported: 18m
+Task: minimal
+
+Package: python-dev
+Priority: optional
+Section: python
+Installed-Size: 32
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: python-defaults
+Version: 2.7.2-7ubuntu2
+Depends: python (= 2.7.2-7ubuntu2), python2.7-dev (>= 2.7.2-3~)
+Size: 1008
+Description: header files and a static library for Python (default)
+ Header files, a static library and development tools for building
+ Python modules, extending the Python interpreter or embedding Python
+ in applications.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://www.python.org/
+
+Package: base-files
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 524
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 6.4ubuntu5
+Replaces: base, dpkg (<= 1.15.0), lsb-release (<< 3.0-8), miscutils
+Provides: base
+Pre-Depends: awk
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/main/b/base-files/base-files_6.4ubuntu5_amd64.deb
+Size: 56264
+MD5sum: 945752439048e427134481b921924f8c
+Description: Debian base system miscellaneous files
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+SHA1: 99d954c31f87b3417785d39f2af94603c600153d
+SHA256: ddd941f2ac13af9616e7f7efa621c13fc20416af7e7be61185b7ca8929d8c1bc
+Description-md5: ccc7d4700eb56c8b814b1f4a8b9a556f
+Supported: 18m
+Task: minimal
+
+Package: mount
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 452
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: util-linux
+Version: 2.19.1-2ubuntu3
+Pre-Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.8), libmount1 (>= 2.19.1), libselinux1 (>= 2.0.15)
+Suggests: nfs-common (>= 1:1.1.0-13)
+Filename: pool/main/u/util-linux/mount_2.19.1-2ubuntu3_amd64.deb
+Size: 161238
+MD5sum: 950edd6ab2d4aa67fa6e7dffc02dfa6d
+Description: Tools for mounting and manipulating filesystems
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: 15a52a1a151a6e66df8f5d78d35765e553b34f5f
+SHA256: d00119fff95acc395c5b5f0a7d79b07e56ccc191457c29d2f79e7c028ab49853
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: 46eb8e09a600d5eb98b6b40428349102
+Supported: 18m
+Task: minimal
+
+Package: libsqlite3-0
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 784
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: sqlite3
+Version: 3.7.7-2ubuntu2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/s/sqlite3/libsqlite3-0_3.7.7-2ubuntu2_amd64.deb
+Size: 341040
+MD5sum: f7a4e7362b6b2679b0266c0dacaddbd2
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+
+Package: libreadline6
+Priority: important
+Section: libs
+Installed-Size: 412
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: readline6
+Version: 6.2-2ubuntu1
+Depends: readline-common, libc6 (>= 2.11), libtinfo5 (>= 5.6+20070908)
+Filename: pool/main/r/readline6/libreadline6_6.2-2ubuntu1_amd64.deb
+Size: 138874
+MD5sum: 58cb9cdf42eeb5e5a2d139eb7bc5788d
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libncurses5
+Priority: required
+Section: libs
+Installed-Size: 560
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: ncurses
+Version: 5.9-1ubuntu5
+Depends: libtinfo5 (= 5.9-1ubuntu5), libc6 (>= 2.4)
+Pre-Depends: libtinfo5
+Recommends: libgpm2
+Filename: pool/main/n/ncurses/libncurses5_5.9-1ubuntu5_amd64.deb
+Size: 139876
+MD5sum: 730b8c4ecf48654f4dda074d257a5441
+Description: shared libraries for terminal handling
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 059b5c3d8b16783a69707d58d7d544bb98baf962
+SHA256: f438749f21127e11985ca192aacdffb7fe18a3c5626219d84a2171f959558fcc
+Homepage: http://invisible-island.net/ncurses/
+Description-md5: 599cbbcff16d09b3b4643d84f37643fd
+Supported: 18m
+Task: minimal
+
+Package: libplymouth2
+Priority: required
+Section: libs
+Installed-Size: 312
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: plymouth
+Version: 0.8.2-2ubuntu28
+Replaces: plymouth (<< 0.7.0+git20090207-0ubuntu0.1~ppa4)
+Depends: libc6 (>= 2.8), libpng12-0 (>= 1.2.13-4)
+Breaks: casper (= 1.227), mountall (<< 2.8)
+Filename: pool/main/p/plymouth/libplymouth2_0.8.2-2ubuntu28_amd64.deb
+Size: 90524
+MD5sum: e3ef4a2f2f724eebaffa9fe39af80f9f
+Description: graphical boot animation and logger - shared libraries
+SHA1: 073b6a34b08479d2a75188437e3fd8e931f70eca
+SHA256: d532f0bd0a5717d032793982eb07ca3f2119c0afed87ec4b9d49f631a440560d
+Description-md5: 29e2ed45f3e127c38b58dae52061cc33
+Supported: 18m
+Task: minimal
+
+Package: vim
+Priority: optional
+Section: editors
+Installed-Size: 2012
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2:7.3.154+hg~74503f6ee649-2ubuntu3
+Provides: editor
+Depends: vim-common (= 2:7.3.154+hg~74503f6ee649-2ubuntu3), vim-runtime (= 2:7.3.154+hg~74503f6ee649-2ubuntu3), libacl1 (>= 2.2.51-3), libc6 (>= 2.11), libgpm2 (>= 1.20.4), libpython2.7 (>= 2.7), libselinux1 (>= 1.32), libtinfo5 (>= 5.6+20070908)
+Suggests: ctags, vim-doc, vim-scripts
+Filename: pool/main/v/vim/vim_7.3.154+hg~74503f6ee649-2ubuntu3_amd64.deb
+Size: 1037524
+MD5sum: e4b996e00c864f92ec8b7de93007461e
+Description: Vi IMproved - enhanced vi editor
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with a rather
+ standard set of features.  This package does not provide a GUI
+ version of Vim.  See the other vim-* packages if you need more
+ (or less).
+Homepage: http://www.vim.org/
+Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: rsync
+Priority: optional
+Section: net
+Installed-Size: 720
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.0.8-1ubuntu1
+Depends: libacl1 (>= 2.2.11-1), libc6 (>= 2.8), libpopt0 (>= 1.16), lsb-base (>= 3.2-14), base-files (>= 4.0.1)
+Suggests: openssh-client, openssh-server
+Size: 309634
+Description: fast remote file copy program (like rcp)
+ rsync is a program that allows files to be copied to and from remote
+ machines in much the same way as rcp.  It has many more options than
+ rcp, and uses the rsync remote-update protocol to greatly speed up
+ file transfers when the destination file already exists.
+ .
+ The rsync remote-update protocol allows rsync to transfer just the
+ differences between two sets of files across the network link.
+ .
+ This package also includes rsyncd daemon functionality.
+Original-Maintainer: Paul Slootman <paul@debian.org>
+
+Package: libkeyutils1
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: keyutils
+Version: 1.4-6
+Depends: libc6 (>= 2.2.5)
+Pre-Depends: multiarch-support
+Size: 6694
+Description: Linux Key Management Utilities (library)
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+ .
+ This package provides a wrapper library for the key management facility system
+ calls.
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Homepage: http://people.redhat.com/~dhowells/keyutils/
+
+Package: libexpat1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 404
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: expat
+Version: 2.0.1-7ubuntu3
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Conflicts: wink (<= 1.5.1060-4)
+Filename: pool/main/e/expat/libexpat1_2.0.1-7ubuntu3_amd64.deb
+Size: 132712
+MD5sum: 817da9467ff9e5ee8336e3a589ec12f7
+Description: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+Homepage: http://expat.sourceforge.net
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: iproute
+Priority: required
+Section: net
+Installed-Size: 1092
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 20110315-1build1
+Provides: arpd
+Depends: libc6 (>= 2.11), libdb5.1
+Recommends: libatm1
+Suggests: iproute-doc
+Conflicts: arpd
+Filename: pool/main/i/iproute/iproute_20110315-1build1_amd64.deb
+Size: 419928
+MD5sum: c54ca24e721de93094b777dd9360a2f3
+Description: networking and traffic control tools
+Original-Maintainer: Debian iproute maintainers <ah-iproute@debian.org>
+SHA1: d6c89c366c1372d6bd58a6f850dca0b17c5bd8ac
+SHA256: 46b1495e1aac726426de4ee6871a8623591a6c533eee3cec993b0dbf4c32cf8d
+Homepage: http://www.linux-foundation.org/en/Net:Iproute2
+Description-md5: f67b095457cae50da19c60c2f3598174
+Supported: 18m
+Task: minimal
+
+Package: patch
+Priority: standard
+Section: vcs
+Installed-Size: 248
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.6.1-2
+Depends: libc6 (>= 2.4)
+Suggests: ed, diffutils-doc
+Size: 80714
+Description: Apply a diff file to an original
+ Patch will take a patch file containing any of the four forms
+ of difference listing produced by the diff program and apply
+ those differences to an original file, producing a patched
+ version.
+Original-Maintainer: Christoph Berg <myon@debian.org>
+
+Package: initramfs-tools-bin
+Priority: required
+Section: utils
+Installed-Size: 132
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: initramfs-tools
+Version: 0.99ubuntu7
+Depends: libc6 (>= 2.4), libudev0 (>= 147)
+Filename: pool/main/i/initramfs-tools/initramfs-tools-bin_0.99ubuntu7_amd64.deb
+Size: 11872
+MD5sum: 44d3e5ddd12f885ba3e9f6b061eb731b
+Description: binaries used by initramfs-tools
+Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+SHA1: 11ce671eb2b2c2dce70526a305d6beac3192caf2
+SHA256: a70bf31bf0bf1c781e36365c209cc440d6c71a9ea6708202bf46550bcb313794
+Description-md5: 14e601bd8c0a0905d238d89be3036fa8
+Supported: 18m
+Task: minimal
+
+Package: libattr1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 72
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: attr
+Version: 1:2.4.46-3
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Conflicts: attr (<< 2.0.0)
+Filename: pool/main/a/attr/libattr1_2.4.46-3_amd64.deb
+Size: 11048
+MD5sum: c03a66f1ec57077840ab822e19357cde
+Description: Extended attribute shared library
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: 0e0cfaaabcc06c0436c78f1b9fba7b9bc2ca0b0b
+SHA256: 382ce8f395a48befe2aef519d29630c1dba7d247713cbad4861741c5d2d071f9
+Homepage: http://savannah.nongnu.org/projects/attr/
+Description-md5: 828e462109496dfbca870108ebcb31fc
+Supported: 18m
+Task: minimal
+
+Package: libmpc2
+Priority: extra
+Section: libs
+Installed-Size: 136
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mpclib
+Version: 0.9-3
+Depends: libc6 (>= 2.3.4), libgmp10, libmpfr4
+Size: 39490
+Description: multiple precision complex floating-point library
+ MPC is a portable library written in C for arbitrary precision
+ arithmetic on complex numbers providing correct rounding. For the time
+ being, it contains all arithmetic operations over complex numbers, the
+ exponential and the logarithm functions, the trigonometric and
+ hyperbolic functions.
+ .
+ Ultimately, it should implement a multiprecision equivalent of the ISO
+ C99 standard.
+ .
+ It builds upon the GNU MP and the MPFR libraries.
+Original-Maintainer: Laurent Fousse <lfousse@debian.org>
+Homepage: http://www.multiprecision.org/mpc/
+
+Package: libpcap0.8
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 316
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libpcap
+Version: 1.1.1-8
+Replaces: libpcap0.8-dev (<< 1.0.0-2)
+Depends: libc6 (>= 2.11)
+Pre-Depends: multiarch-support
+Size: 117920
+Description: system interface for user-level packet capture
+ libpcap (Packet CAPture) provides a portable framework for low-level
+ network monitoring.  Applications include network statistics collection,
+ security monitoring, network debugging, etc.
+ .
+ Since almost every system vendor provides a different interface for
+ packet capture, and since there are several tools that require this
+ functionality, the libpcap authors created this system-independent API
+ to ease in porting and to alleviate the need for several
+ system-dependent packet capture modules in each application.
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+Homepage: http://www.tcpdump.org/
+
+Package: sed
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 296
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 4.2.1-9
+Depends: dpkg (>= 1.15.4) | install-info
+Pre-Depends: libc6 (>= 2.4), libselinux1 (>= 1.32)
+Filename: pool/main/s/sed/sed_4.2.1-9_amd64.deb
+Size: 139966
+MD5sum: d5e305d648f12138a79fe2c2158fe0be
+Description: The GNU sed stream editor
+Original-Maintainer: Clint Adams <clint@debian.org>
+SHA1: 46d337f225e618d376834a3fc3768e967e3f0f5c
+SHA256: 73b676dd28fc894689b67179c81eb23cda05329127d89bec7d84bed8751e5ec5
+Homepage: http://www.gnu.org/software/sed/
+Description-md5: 67b5a614216e15a54b09cad62d5d5afc
+Supported: 18m
+Task: minimal
+
+Package: libidn11
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 384
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libidn
+Version: 1.22-2
+Replaces: libidn11-dev
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Conflicts: libidn9-dev
+Size: 111366
+Description: GNU Libidn library, implementation of IETF IDN specifications
+ GNU Libidn is a fully documented implementation of the Stringprep,
+ Punycode and IDNA specifications.  Libidn's purpose is to encode and
+ decode internationalized domain names.  The Nameprep, XMPP, SASLprep,
+ and iSCSI profiles are supported.
+ .
+ This package contains the shared library.
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://www.gnu.org/software/libidn/
+
+Package: python2.7-minimal
+Priority: required
+Section: python
+Installed-Size: 5668
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: python2.7
+Version: 2.7.2-5ubuntu1
+Replaces: python2.7 (<< 2.7.1~rc1-2~)
+Depends: libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.0)
+Recommends: python2.7
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: pool/main/p/python2.7/python2.7-minimal_2.7.2-5ubuntu1_amd64.deb
+Size: 1622980
+MD5sum: f7532d3703ceab9ad1b80b26dc167166
+Description: A minimal subset of the Python language (version 2.7)
+Original-Maintainer: Matthias Klose <doko@debian.org>
+SHA1: 91b0e1287d67d749fa794584f49edfb243d539b0
+SHA256: 20c027bb5584cce94e1f36bc3d073c57c8cfd4dc2a017ea8a73b676a33ac9a34
+Python-Runtime: python2.7
+Python-Version: 2.7
+Description-md5: 7eee823953aa7d53ab1ca9a5500cf879
+Supported: 18m
+Task: minimal
+
+Package: tcpdump
+Priority: optional
+Section: net
+Installed-Size: 1060
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.1.1-2ubuntu2
+Depends: libc6 (>= 2.7), libpcap0.8 (>= 1.0.0), libssl1.0.0 (>= 1.0.0)
+Suggests: apparmor (>= 2.3)
+Size: 393778
+Description: command-line network traffic analyzer
+ This program allows you to dump the traffic on a network. tcpdump
+ is able to examine IPv4, ICMPv4, IPv6, ICMPv6, UDP, TCP, SNMP, AFS
+ BGP, RIP, PIM, DVMRP, IGMP, SMB, OSPF, NFS and many other packet
+ types.
+ .
+ It can be used to print out the headers of packets on a network
+ interface, filter packets that match a certain expression. You can
+ use this tool to track down network problems, to detect attacks
+ or to monitor network activities.
+Homepage: http://www.tcpdump.org/
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+
+Package: librtmp0
+Multi-Arch: same
+Priority: extra
+Section: libs
+Installed-Size: 160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: rtmpdump
+Version: 2.3-2ubuntu1
+Depends: libc6 (>= 2.7), libgcrypt11 (>= 1.5.0-0), libgnutls26 (>= 2.9.11-0), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Size: 50838
+Description: toolkit for RTMP streams (shared library)
+ A small dumper for media content streamed over the RTMP protocol (like BBC's
+ iPlayer high quality streams). Supplying an rtmp url will result in a dumped
+ flv file, which can be played/transcoded using ffmpeg/mplayer, etc.
+ .
+ This package contains the shared libraries, header files needed by
+ programs that want to use librtmp.
+Homepage: http://rtmpdump.mplayerhq.hu/
+Original-Maintainer: Debian multimedia packages maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+
+Package: klibc-utils
+Priority: required
+Section: libs
+Installed-Size: 456
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: klibc
+Version: 1.5.22-1ubuntu2
+Depends: libklibc (= 1.5.22-1ubuntu2)
+Filename: pool/main/k/klibc/klibc-utils_1.5.22-1ubuntu2_amd64.deb
+Size: 157768
+MD5sum: 3db28faaa3b1dc36778a586498fb3b90
+Description: small utilities built with klibc for early boot
+Original-Maintainer: maximilian attems <maks@debian.org>
+SHA1: 7c0b57d731e900b9c9b5923cfa6c79bc6e8516e6
+SHA256: 66565874b410e0490570191afec42ac660c651770b44f3c5195950e0e4a0570d
+Description-md5: c3467a84f84cfb54cfe339be01214b23
+Supported: 18m
+Task: minimal
+
+Package: e2fslibs
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 328
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: e2fsprogs
+Version: 1.41.14-1ubuntu3
+Replaces: e2fsprogs (<< 1.34-1)
+Provides: libe2p2, libext2fs2
+Depends: libc6 (>= 2.7)
+Pre-Depends: multiarch-support
+Filename: pool/main/e/e2fsprogs/e2fslibs_1.41.14-1ubuntu3_amd64.deb
+Size: 148292
+MD5sum: 012e59801a072c766e96a552cd4c7440
+Description: ext2/ext3/ext4 file system libraries
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+SHA1: 9c85aa797a6ffefb9127e84d824aa70725ecf866
+SHA256: a747f191611aa5d0bfad7047c33b27d6296158bd88012abf8d6f4c51321b3fdd
+Homepage: http://e2fsprogs.sourceforge.net
+Description-md5: ba4f61a3e0b238831f03143cbdce696e
+Supported: 18m
+Task: minimal
+
+Package: libkrb5support0
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: krb5
+Version: 1.9.1+dfsg-1ubuntu1
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.3.4)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.6.dfsg.4~beta1-9)
+Size: 23830
+Description: MIT Kerberos runtime libraries - Support library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an internal runtime support library used by other
+ Kerberos libraries.
+Homepage: http://web.mit.edu/kerberos/
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+
+Package: base-passwd
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 208
+Origin: Ubuntu
+Maintainer: Colin Watson <cjwatson@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 3.5.23
+Replaces: base
+Depends: libc6 (>= 2.8)
+Filename: pool/main/b/base-passwd/base-passwd_3.5.23_amd64.deb
+Size: 39016
+MD5sum: e26e13cb8dff047f636a2bb0c0418b31
+Description: Debian base system master password and group files
+SHA1: 2dc93966fd9edd27afb7037e6d746132ffa239d4
+SHA256: f146084a459ebe70d400e209fa307b79294ea21ffd35596838c184603bbf4ef2
+Description-md5: aad0cc52ee72b2469af5552851e49f03
+Supported: 18m
+Task: minimal
+
+Package: libcomerr2
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 116
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: e2fsprogs
+Version: 1.41.14-1ubuntu3
+Replaces: e2fsprogs (<< 1.34-1)
+Provides: libcomerr-kth-compat
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/e/e2fsprogs/libcomerr2_1.41.14-1ubuntu3_amd64.deb
+Size: 53728
+MD5sum: 8e8bb50c95443e29d326659201143db8
+Description: common error description library
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+SHA1: 4ab50c4321dea1edddc088cbb4e31f5eb7d18b54
+SHA256: c322675c5c79496bdcf8f23ba26ec36b1f713667cc322f3c4b7cff149576dd32
+Homepage: http://e2fsprogs.sourceforge.net
+Description-md5: 5611f795c9947cfb9a2980a01506a1b9
+Supported: 18m
+Task: minimal
+
+Package: mawk
+Priority: required
+Section: utils
+Installed-Size: 256
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.3.3-15ubuntu2
+Provides: awk
+Pre-Depends: libc6 (>= 2.11~20100104-0ubuntu3)
+Filename: pool/main/m/mawk/mawk_1.3.3-15ubuntu2_amd64.deb
+Size: 92390
+MD5sum: 8f4caa9b63cc35e04d23d5d7b4c06026
+Description: a pattern scanning and text processing language
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+SHA1: 9ffe2b2d4f73b8d491f815e5371a244a089c9886
+SHA256: 4dac7c48ad76d69f3881800d15ded0de817c326adbb8c7e58fda16b902d557bf
+Description-md5: e02f3de1fa8a56e3f324f082c0c2e41f
+Supported: 18m
+Task: minimal
+
+Package: gnupg
+Priority: important
+Section: utils
+Installed-Size: 1956
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.4.11-3ubuntu1
+Depends: libbz2-1.0, libc6 (>= 2.4), libreadline6 (>= 6.0), libusb-0.1-4 (>= 2:0.1.12), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info, gpgv
+Suggests: gnupg-curl, gnupg-doc, xloadimage | imagemagick | eog, libpcsclite1
+Filename: pool/main/g/gnupg/gnupg_1.4.11-3ubuntu1_amd64.deb
+Size: 810742
+MD5sum: 6d88c0233696ccf1f181055324b07f89
+Description: GNU privacy guard - a free PGP replacement
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC 4880.
+ .
+ GnuPG 1.4 is the standalone, non-modularized series. In contrast to
+ the version 2 series, shipped with the gnupg2 package, it comes
+ with no support for S/MIME and some other tools useful for desktop
+ environments, but also with less dependencies.
+ .
+ The gnupg package is built without libcurl. So it does not support
+ HKPS keyservers. Install the gnupg-curl package if you want to use
+ the keyserver helper tools built with libcurl and supporting HKPS.
+ .
+ GnuPG does not use any patented algorithms. This means it cannot be
+ compatible with PGP2, because that uses IDEA (which is patented in
+ a number of countries).
+Homepage: http://www.gnupg.org
+Original-Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+
+Package: libdb4.8
+Multi-Arch: same
+Priority: extra
+Section: oldlibs
+Installed-Size: 1516
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: db4.8
+Version: 4.8.30-9ubuntu1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/d/db4.8/libdb4.8_4.8.30-9ubuntu1_amd64.deb
+Size: 678748
+MD5sum: fae0d3f25c647d0de839c3b93654e7b3
+Description: Berkeley v4.8 Database Libraries [runtime]
+ This is the runtime package for programs that use the v4.8 Berkeley
+ database library.
+Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
+
+Package: grep
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 584
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 2.9-1
+Provides: rgrep
+Depends: dpkg (>= 1.15.4) | install-info
+Pre-Depends: libc6 (>= 2.4)
+Suggests: libpcre3 (>= 7.7)
+Conflicts: rgrep
+Filename: pool/main/g/grep/grep_2.9-1_amd64.deb
+Size: 250130
+MD5sum: 459214aae38ce50b282f42f077f765ff
+Description: GNU grep, egrep and fgrep
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: 9ea11cd412374f53bf6921e15017b48826e3154b
+SHA256: 1d913907896458461d32e58133532dc6b375f7bfe12df75b8e6dc883d731ec08
+Homepage: http://www.gnu.org/software/grep/
+Description-md5: f9188c5583d41955f3b3fe60b9d445f1
+Supported: 18m
+Task: minimal
+
+Package: plymouth
+Priority: required
+Section: x11
+Installed-Size: 512
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 0.8.2-2ubuntu28
+Depends: libc6 (>= 2.8), libdbus-1-3 (>= 1.1.1), libdrm-intel1 (>= 2.4.9), libdrm-nouveau1a (>= 2.4.23), libdrm-radeon1 (>= 2.4.17), libdrm2 (>= 2.4.3), libplymouth2 (= 0.8.2-2ubuntu28), libtinfo5 (>= 5.7+20100313), upstart-job, udev (>= 166-0ubuntu4), mountall (>= 2.0), initramfs-tools
+Recommends: plymouth-theme-ubuntu-text | plymouth-theme
+Breaks: gdm (<< 3.0.4-0ubuntu11), kdm (<< 4:4.7.1-0ubuntu3), lightdm (<< 0.9.7-0ubuntu2), lubuntu-plymouth-theme (<= 0.4), lxdm (<< 0.4.1-0ubuntu2), ubuntustudio-plymouth-theme (<= 0.38), xubuntu-plymouth-theme (<< 10.04.4)
+Conflicts: usplash
+Filename: pool/main/p/plymouth/plymouth_0.8.2-2ubuntu28_amd64.deb
+Size: 122476
+MD5sum: 82e59c26baebedc509395d57896eda5b
+Description: graphical boot animation and logger - main package
+SHA1: 45eca0d7273434205c5f9a7f72b7474f57b67af4
+SHA256: 64c378c6a4fe51087d7737a4d14f9e43bfe4cc9519ff64ef52a8d64651475ad5
+Description-md5: 36dd6c0b2d2e2968eb795981d2b48521
+Supported: 18m
+Task: minimal
+
+Package: upstart
+Priority: required
+Section: admin
+Installed-Size: 948
+Origin: Ubuntu
+Maintainer: James Hunt <james.hunt@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.3-0ubuntu10
+Replaces: startup-tasks, system-services, sysvinit, upstart-compat-sysv, upstart-job
+Provides: startup-tasks, system-services, upstart-compat-sysv, upstart-job
+Depends: libc6 (>= 2.9), libdbus-1-3 (>= 1.2.16), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libudev0 (>= 151), sysvinit-utils, sysv-rc, initscripts, mountall, ifupdown (>= 0.6.10ubuntu5)
+Suggests: python, graphviz, bash-completion
+Breaks: friendly-recovery (<< 0.2.13), libc6 (<< 2.12.1-0ubuntu12)
+Conflicts: startup-tasks, system-services, sysvinit, upstart-compat-sysv, upstart-job
+Filename: pool/main/u/upstart/upstart_1.3-0ubuntu10_amd64.deb
+Size: 288034
+MD5sum: 3b2b327768f18da266c4ce2dcd3e4558
+Description: event-based init daemon
+SHA1: 6d315e21271fa767828cbe782e0c4a62ff7747e2
+SHA256: 5f1045586fe2c141c88f29ff5ffa0489b5524db4c716342d4d781786acf5bb00
+Homepage: http://upstart.ubuntu.com/
+Description-md5: b776ec43b708c13dd0c2ab824471f478
+Supported: 18m
+Task: minimal
+
+Package: mlocate
+Priority: standard
+Section: utils
+Installed-Size: 224
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.23.1-1ubuntu2
+Depends: libc6 (>= 2.4), adduser
+Conflicts: findutils (<= 4.2.31-1), slocate (<= 3.1-1.1)
+Size: 50574
+Description: quickly find files on the filesystem based on their name
+ mlocate is a new implementation of locate, a tool to find files
+ anywhere in the filesystem based on their name, using a fixed pattern
+ or a regular expression. Unlike other tools like find(1), locate uses
+ a previously created database to perform the search, allowing queries
+ to execute much faster. This database is updated periodically from
+ cron.
+ .
+ Several implementations of locate exist: the original implementation
+ from GNU's findutils, slocate, and mlocate. The advantages of mlocate
+ are:
+ .
+  * it indexes all the filesystem, but results of a search will only
+    include files that the user running locate has access to. It does
+    this by updating the database as root, but making it unreadable for
+    normal users, who can only access it via the locate binary. slocate
+    does this as well, but not the original locate.
+ .
+  * instead of re-reading all the contents of all directories each time
+    the database is updated, mlocate keeps timestamp information in its
+    database and can know if the contents of a directory changed without
+    reading them again. This makes updates much faster and less demanding
+    on the hard drive. This feature is only found in mlocate.
+ .
+ Installing mlocate will change the /usr/bin/locate binary to point to
+ mlocate via the alternatives mechanism. After installation, you may
+ wish to run /etc/cron.daily/mlocate by hand to create the database,
+ otherwise mlocate won't work until that script is run from cron itself
+ (since mlocate does not use the same database file as standard locate).
+ Also, you may wish to remove the "locate" package in order not to have
+ two different database files updated regularly on your system.
+Homepage: http://carolina.mff.cuni.cz/~trmac/blog/mlocate
+Original-Maintainer: Tollef Fog Heen <tfheen@debian.org>
+
+Package: bash-completion
+Priority: standard
+Section: shells
+Installed-Size: 1136
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:1.3-1ubuntu6
+Replaces: bash, cryptsetup (<< 2:1.1.2-2), xen-tools (<= 4.1-1)
+Depends: bash (>= 3.2)
+Conflicts: xen-tools (<= 4.1-1)
+Size: 132578
+Description: programmable completion for the bash shell
+ bash completion extends bash's standard completion behavior to achieve
+ complex command lines with just a few keystrokes.  This project was
+ conceived to produce programmable completion routines for the most
+ common Linux/UNIX commands, reducing the amount of typing sysadmins
+ and programmers need to do on a daily basis.
+Homepage: http://bash-completion.alioth.debian.org
+Original-Maintainer: Bash Completion Maintainers <bash-completion-devel@lists.alioth.debian.org>
+
+Package: libsasl2-modules
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 248
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: cyrus-sasl2
+Version: 2.1.24~rc1.dfsg1+cvs2011-05-23-4ubuntu2
+Depends: libsasl2-2 (= 2.1.24~rc1.dfsg1+cvs2011-05-23-4ubuntu2), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
+Suggests: libsasl2-modules-otp, libsasl2-modules-ldap, libsasl2-modules-sql, libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+Size: 63140
+Description: Cyrus SASL - pluggable authentication modules
+ This is the Cyrus SASL API implementation, version 2.1. See package
+ libsasl2-2 and RFC 2222 for more information.
+ .
+ This package provides the following SASL modules: LOGIN, PLAIN, ANONYMOUS,
+ NTLM, CRAM-MD5, and DIGEST-MD5 (with DES support).
+Homepage: http://www.cyrusimap.org/
+Original-Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
+
+Package: libsasl2-2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 220
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: cyrus-sasl2
+Version: 2.1.24~rc1.dfsg1+cvs2011-05-23-4ubuntu2
+Replaces: libsasl2
+Depends: libc6 (>= 2.4), libdb5.1
+Pre-Depends: multiarch-support
+Recommends: libsasl2-modules (= 2.1.24~rc1.dfsg1+cvs2011-05-23-4ubuntu2)
+Size: 70376
+Description: Cyrus SASL - authentication abstraction library
+ This is the Cyrus SASL API implementation, version 2.1.
+ .
+ SASL is the Simple Authentication and Security Layer, a method for
+ adding authentication support to connection-based protocols. To use
+ SASL, a protocol includes a command for identifying and
+ authenticating a user to a server and for optionally negotiating
+ protection of subsequent protocol interactions. If its use is
+ negotiated, a security layer is inserted between the protocol and the
+ connection. See RFC 2222 for more information.
+ .
+ Any of: ANONYMOUS, CRAM-MD5, DIGEST-MD5, GSSAPI (MIT or Heimdal
+ Kerberos 5), NTLM, OTP, PLAIN, or LOGIN can be used. If you intend to
+ use this package on a server that provides SASL authentication, then
+ you must install some of the libsasl2-modules* packages.
+Homepage: http://www.cyrusimap.org/
+Original-Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
+
+Package: passwd
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 2800
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: shadow
+Version: 1:4.1.4.2+svn3283-3ubuntu2
+Replaces: manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
+Depends: libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libpam-modules, debianutils (>= 2.15.2)
+Filename: pool/main/s/shadow/passwd_4.1.4.2+svn3283-3ubuntu2_amd64.deb
+Size: 949458
+MD5sum: 93c6da1ce46f30c3608d2e3c872c3cfb
+Description: change and administer password and group data
+Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+SHA1: 1a0dced60ad81707f86d2829ede3483a4f125632
+SHA256: dc144b05a5d627cbffc8a883d4918e0a9cabd9e0ab810ac2c6831a4a4ef77f22
+Homepage: http://pkg-shadow.alioth.debian.org/
+Description-md5: 5bbd70e421ed3367a8299e53bd7afed4
+Supported: 18m
+Task: minimal
+
+Package: hostname
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 116
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 3.06ubuntu1
+Replaces: nis (<< 3.17-30)
+Pre-Depends: libc6 (>= 2.4), upstart-job
+Conflicts: nis (<< 3.17-30)
+Filename: pool/main/h/hostname/hostname_3.06ubuntu1_amd64.deb
+Size: 13606
+MD5sum: 1e75f14df40b817e5c4994d44da42fbf
+Description: utility to set/show the host name or domain name
+Original-Maintainer: Debian Hostname Team <hostname-devel@lists.alioth.debian.org>
+SHA1: a9049e4fc6152a13ea070bcfa731f2160b791113
+SHA256: e38753db3dbbf43635d9234290026a26b4cca1a5d61afaae8ac7f70ba30e71a6
+Description-md5: a5a22acc3c69a7f40f07f1a8dfc93af1
+Supported: 18m
+Task: minimal
+
+Package: ngrep
+Priority: optional
+Section: net
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.45.ds2-9
+Depends: libc6 (>= 2.7), libnet1 (>= 1.1.2.1), libpcap0.8 (>= 0.9.8), libpcre3 (>= 7.7)
+Size: 35742
+Description: grep for network traffic
+ ngrep strives to provide most of GNU grep's common features,
+ applying them to the network layer.  ngrep is a pcap-aware tool that
+ will allow you to specify extended regular expressions to match
+ against data payloads of packets.  It currently recognizes TCP, UDP
+ and ICMP across Ethernet, PPP, SLIP and null interfaces, and
+ understands bpf filter logic in the same fashion as more common
+ packet sniffing tools, such as tcpdump and snoop.
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+Homepage: http://ngrep.sf.net/
+
+Package: nmap
+Priority: extra
+Section: net
+Installed-Size: 7100
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Version: 5.21-1.1
+Replaces: ndiff
+Provides: ndiff
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), liblua5.1-0, libpcap0.8 (>= 0.9.8), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6)
+Conflicts: ndiff
+Size: 1642628
+Description: The Network Mapper
+ Nmap is a utility for network exploration or security auditing. It
+ supports ping scanning (determine which hosts are up), many port
+ scanning techniques, version detection (determine service protocols
+ and application versions listening behind ports), and TCP/IP
+ fingerprinting (remote host OS or device identification). Nmap also
+ offers flexible target and port specification, decoy/stealth scanning,
+ sunRPC scanning, and more. Most Unix and Windows platforms are
+ supported in both GUI and commandline modes. Several popular handheld
+ devices are also supported, including the Sharp Zaurus and the iPAQ.
+Python-Version: all
+
+Package: libacl1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 96
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: acl
+Version: 2.2.51-3
+Depends: libattr1 (>= 2.4.41-1), libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Conflicts: acl (<< 2.0.0), libacl1-kerberos4kth
+Filename: pool/main/a/acl/libacl1_2.2.51-3_amd64.deb
+Size: 18014
+MD5sum: 6baf8440a3fd31fdd679a85806c6f727
+Description: Access control list shared library
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: 5be0a1faf3b897dc31d741c17ad995f28785a3f7
+SHA256: 283f711a821f1dcc4b9c25eb582aaa9e10bdd39d2ee3cf31d730b2ebc3d134a7
+Homepage: http://savannah.nongnu.org/projects/acl/
+Description-md5: 65c1428a85567ba04597e882b0aecfe2
+Supported: 18m
+Task: minimal
+
+Package: libpam-runtime
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 292
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: all
+Source: pam
+Version: 1.1.3-2ubuntu1
+Replaces: libpam0g-dev, libpam0g-util
+Depends: debconf (>= 1.5.19), libpam-modules (>= 1.0.1-6)
+Conflicts: libpam0g-util
+Filename: pool/main/p/pam/libpam-runtime_1.1.3-2ubuntu1_all.deb
+Size: 44758
+MD5sum: c99a00f2358e33cbb4f3ce7852e589db
+Description: Runtime support for the PAM library
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+SHA1: 8a09c760fe24a1d9eab1ed1a5c6f0fbf109b4fc9
+SHA256: 8177439114011e34f4d99c2d9890183d358d8341162218f498a69c5e5f31bcc4
+Homepage: http://pam.sourceforge.net/
+Description-md5: bc15ddbf92ee7965a8588141c54bb5a1
+Supported: 18m
+Task: minimal
+
+Package: xauth
+Priority: optional
+Section: x11
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:1.0.6-1
+Depends: libc6 (>= 2.11), libx11-6, libxau6, libxext6, libxmuu1
+Size: 26228
+Description: X authentication utility
+ xauth is a small utility to read and manipulate Xauthority files, which
+ are used by servers and clients alike to control authentication and access
+ to X sessions.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libslang2
+Priority: required
+Section: libs
+Installed-Size: 1580
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: slang2
+Version: 2.2.4-2ubuntu1
+Depends: libc6 (>= 2.4)
+Recommends: libpng12-0
+Filename: pool/main/s/slang2/libslang2_2.2.4-2ubuntu1_amd64.deb
+Size: 503116
+MD5sum: a9deda70ed9ddf8cd8e11c30b739fb53
+Description: S-Lang programming library - runtime version
+Original-Maintainer: Alastair McKinstry <mckinstry@debian.org>
+SHA1: 04c7d8591053030e740583c45c0d7a2f3ced953a
+SHA256: a9cfb32e046bf1be9bc04de813addb09eddac58b527a35493f7b8386e8a3c338
+Description-md5: 63cf6009be68fe5fb7a6729e8527359d
+Supported: 18m
+Task: minimal
+
+Package: initscripts
+Priority: required
+Section: admin
+Installed-Size: 312
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: sysvinit
+Version: 2.88dsf-13.10ubuntu4
+Replaces: libc0.1, libc0.3, libc6, libc6.1
+Depends: libc6 (>= 2.4), mount (>= 2.11x-1), debianutils (>= 4), lsb-base (>= 3.2-14), sysvinit-utils (>= 2.86.ds1-64), sysv-rc | file-rc, coreutils (>= 5.93), passwd, upstart, mountall (>= 2.28)
+Recommends: psmisc, e2fsprogs
+Breaks: hostname (<< 2.95ubuntu1~boot2), rsyslog (<< 4.2.0-2ubuntu3~boot1), selinux-policy-default (<= 2:0.2.20100524-9), udev (<< 146-2~boot6), upstart (<< 0.6.3-2~boot4)
+Conflicts: libdevmapper1.02.1 (<< 2:1.02.24-1)
+Filename: pool/main/s/sysvinit/initscripts_2.88dsf-13.10ubuntu4_amd64.deb
+Size: 27264
+MD5sum: a16c16cf17d9cf7bb824585e65b920b7
+Description: scripts for initializing and shutting down the system
+Original-Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
+SHA1: 391bb5455dc7700ecaef19026edcaa82b8ad3e7f
+SHA256: 33e24c18ab5bde0218728463f499b4017a2c3902b254d2ff425e9a09142ea131
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Description-md5: db9003c179cd2a623493209da58ea2ea
+Supported: 18m
+Task: minimal
+
+Package: libblkid1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 272
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: util-linux
+Version: 2.19.1-2ubuntu3
+Depends: libc6 (>= 2.7), libuuid1 (>= 2.16)
+Pre-Depends: multiarch-support
+Filename: pool/main/u/util-linux/libblkid1_2.19.1-2ubuntu3_amd64.deb
+Size: 73156
+MD5sum: 9f99b6323564f2df73c5fc9877997a68
+Description: block device id library
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: 62f4cb00321fb79ffe929d00efef4b6a2827e5f9
+SHA256: 98ea39508839046bbfa2c712e816082702c8fd307ccabf658400403231718011
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: 9f5b2c2cfc1959cf76c0457903a778b8
+Supported: 18m
+Task: minimal
+
+Package: python2.7-dev
+Priority: optional
+Section: python
+Installed-Size: 15508
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: python2.7
+Version: 2.7.2-5ubuntu1
+Replaces: python2.7 (<< 2.7-3)
+Depends: python2.7 (= 2.7.2-5ubuntu1), libpython2.7 (= 2.7.2-5ubuntu1), libexpat1-dev, libssl-dev
+Recommends: libc6-dev | libc-dev
+Size: 5129752
+Description: Header files and a static library for Python (v2.7)
+ Header files, a static library and development tools for building
+ Python (v2.7) modules, extending the Python interpreter or embedding
+ Python (v2.7) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libss2
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 128
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: e2fsprogs
+Version: 1.41.14-1ubuntu3
+Replaces: e2fsprogs (<< 1.34-1)
+Depends: libcomerr2, libc6 (>= 2.11)
+Pre-Depends: multiarch-support
+Filename: pool/main/e/e2fsprogs/libss2_1.41.14-1ubuntu3_amd64.deb
+Size: 58846
+MD5sum: 6beecd9c34b3fad2e900e6ba1db01e89
+Description: command-line interface parsing library
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+SHA1: 8433f2353ba5ab9c9705ef18b6faebaec69e800b
+SHA256: 5cbeaa61150216996cee93b5fa146f5129f80b5240ec5588d565a56637adce5a
+Homepage: http://e2fsprogs.sourceforge.net
+Description-md5: 5d43d32aeb239e1859252b968799dc5b
+Supported: 18m
+Task: minimal
+
+Package: libpam-modules-bin
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 228
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: pam
+Version: 1.1.3-2ubuntu1
+Replaces: libpam-modules (<< 1.1.3-2)
+Depends: libc6 (>= 2.4), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32)
+Filename: pool/main/p/pam/libpam-modules-bin_1.1.3-2ubuntu1_amd64.deb
+Size: 41934
+MD5sum: cd32bbfaddcf4a46180a7b672cadaeb4
+Description: Pluggable Authentication Modules for PAM - helper binaries
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+SHA1: 41dcc796d4e0dc0617f5306a73a0ec76753fb86c
+SHA256: bef1743c04a3386fd45de2408cf8f29af1979020ef4555ee9587e1c6e51a65c9
+Homepage: http://pam.sourceforge.net/
+Description-md5: 25d278fc7450d5202a9a137f71302e58
+Supported: 18m
+Task: minimal
+
+Package: findutils
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 840
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 4.4.2-1ubuntu3
+Pre-Depends: libc6 (>= 2.7)
+Suggests: mlocate | locate | slocate
+Filename: pool/main/f/findutils/findutils_4.4.2-1ubuntu3_amd64.deb
+Size: 394572
+MD5sum: 692b52f9073dd0cf4b1991d95c299ffe
+Description: utilities for finding files--find, xargs
+Original-Maintainer: Andreas Metzler <ametzler@debian.org>
+SHA1: 49465aecaaf9ee3dd22aa03b2332f2ce6a968983
+SHA256: 16651682e5213b6763ae8e3360c547e795fe396e2db592c70ceaa133f0344739
+Homepage: http://savannah.gnu.org/projects/findutils/
+Description-md5: ad1a783819241ffdf3ff5f37a676af59
+Supported: 18m
+Task: minimal
+
+Package: libbsd0
+Priority: optional
+Section: libs
+Installed-Size: 140
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libbsd
+Version: 0.3.0-1
+Depends: libc6 (>= 2.8)
+Size: 31350
+Description: utility functions from BSD systems - shared library
+ This library provides some functions commonly available on BSD systems
+ but not on others like GNU systems.
+Original-Maintainer: Debian GNU/kFreeBSD <debian-bsd@lists.debian.org>
+Homepage: http://libbsd.freedesktop.org/
+
+Package: xz-utils
+Priority: required
+Section: utils
+Installed-Size: 372
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 5.0.0-2
+Replaces: xz-lzma (<< 4.999.9beta+20091004-1)
+Depends: libc6 (>= 2.7), liblzma2 (>= 5.0.0)
+Suggests: xz-lzma
+Breaks: xz-lzma (<< 4.999.9beta+20091004-1)
+Filename: pool/main/x/xz-utils/xz-utils_5.0.0-2_amd64.deb
+Size: 91632
+MD5sum: 648084c92d8c87ff2d04871f6fc884d0
+Description: XZ-format compression utilities
+Original-Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+SHA1: f6f2481f57685f9189ae253eae6ead9e254bef50
+SHA256: 2cb50fa2b0e2572aef1d096bf0b0e78a7526f65df82dac0e308a7dca80157bb3
+Homepage: http://tukaani.org/xz/
+Description-md5: ea97a558c8575aebbed2c11cbd20e0f2
+Supported: 18m
+Task: minimal
+
+Package: libx11-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 1516
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Source: libx11
+Version: 2:1.4.4-2ubuntu1
+Depends: libc6 (>= 2.4), libxcb1 (>= 1.2), libx11-data
+Pre-Depends: multiarch-support
+Size: 765660
+Description: X11 client-side library
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libpod-plainer-perl
+Priority: optional
+Section: perl
+Installed-Size: 60
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.03-1
+Depends: perl
+Size: 5950
+Description: Perl extension for converting Pod to old-style Pod.
+ Pod::Plainer uses Pod::Parser which takes Pod with the (new) 'C<< .. >>'
+ constructs and returns the old(er) style with just 'C<>'; '<' and '>' are
+ replaced by 'E<lt>' and 'E<gt>'.
+ .
+ This can be used to pre-process Pod before using tools which do not recognise
+ the new style Pods.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Pod-Plainer/
+
+Package: git-man
+Priority: optional
+Section: doc
+Installed-Size: 1340
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: git
+Version: 1:1.7.5.4-1
+Replaces: cogito (<< 0.16rc2-0), git (<< 1:1.7.4~rc1), git-core (<< 1:1.7.0.4-1.)
+Breaks: git (<< 1:1.7.4~rc1)
+Size: 571212
+Description: fast, scalable, distributed revision control system (manual pages)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides reference documentation for use by the 'man'
+ utility and the 'git help' command.
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+Homepage: http://git-scm.com/
+
+Package: e2fsprogs
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 2172
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.41.14-1ubuntu3
+Replaces: hurd (<= 20040301-1), libblkid1 (<< 1.38+1.39-WIP-2005.12.10-2), libuuid1 (<< 1.38+1.39-WIP-2005.12.10-2)
+Pre-Depends: e2fslibs (= 1.41.14-1ubuntu3), libblkid1 (>= 2.17.2), libc6 (>= 2.11), libcomerr2 (>= 1.34-1), libss2 (>= 1.34-1), libuuid1 (>= 2.16), util-linux (>= 2.15~rc1-1)
+Suggests: gpart, parted, e2fsck-static
+Conflicts: dump (<< 0.4b4-4), initscripts (<< 2.85-4), quota (<< 1.55-8.1), sysvinit (<< 2.85-4)
+Filename: pool/main/e/e2fsprogs/e2fsprogs_1.41.14-1ubuntu3_amd64.deb
+Size: 828620
+MD5sum: 3377499ecf649e6f81e8e858754dc771
+Description: ext2/ext3/ext4 file system utilities
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+SHA1: 13d38c751605060d361290aea9f5297881a0209e
+SHA256: 38a601a9f89fcfe93cf110799291c43ee9eb76f4a06e77086e494438001f584a
+Homepage: http://e2fsprogs.sourceforge.net
+Description-md5: 881261e27e1b159f3ebde5eb1b41e135
+Supported: 18m
+Task: minimal
+
+Package: liblzma2
+Priority: required
+Section: libs
+Installed-Size: 324
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: xz-utils
+Version: 5.0.0-2
+Depends: libc6 (>= 2.4)
+Filename: pool/main/x/xz-utils/liblzma2_5.0.0-2_amd64.deb
+Size: 85250
+MD5sum: 65d4df08a066272996bc943004de9618
+Description: XZ-format compression library
+Original-Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+SHA1: 7f51d43a5e540b13274cbf1398e7307dd552242c
+SHA256: bd322300f0f7dad0005f1193afc6509773e72dc7ffb068be1eb287f30dcd23da
+Homepage: http://tukaani.org/xz/
+Description-md5: 0ceca09eb4ab99863be3578fa55e7d2b
+Supported: 18m
+Task: minimal
+
+Package: libnih1
+Priority: required
+Section: libs
+Installed-Size: 172
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libnih
+Version: 1.0.3-4ubuntu2
+Depends: libc6 (>> 2.13~), libc6 (<< 2.14)
+Filename: pool/main/libn/libnih/libnih1_1.0.3-4ubuntu2_amd64.deb
+Size: 54736
+MD5sum: a645f563e5b604c30bdf97fd9a279c7e
+Description: NIH Utility Library
+Original-Maintainer: Scott James Remnant <scott@netsplit.com>
+SHA1: b660c3e73967ae71f7eb6d3474aeaf832259daf7
+SHA256: a0338a9e1c34b8090d6f1a7bd355d35c43edf84baa2ac73ea7be2db925be9015
+Homepage: https://launchpad.net/libnih
+Description-md5: 92500fc26ab644cbeb0d43f75dce8ac8
+Supported: 18m
+Task: minimal
+
+Package: cpp
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-defaults (1.107ubuntu5)
+Version: 4:4.6.1-2ubuntu5
+Depends: cpp-4.6 (>= 4.6.1-1)
+Suggests: cpp-doc
+Conflicts: cpp-doc (<< 1:2.95.3)
+Size: 28022
+Description: GNU C preprocessor (cpp)
+ The GNU C preprocessor is a macro processor that is used automatically
+ by the GNU C compiler to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+ .
+ This is a dependency package providing the default GNU C preprocessor.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgnutls26
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 1064
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gnutls26
+Version: 2.10.5-1ubuntu3
+Replaces: gnutls0, gnutls0.4, gnutls3
+Depends: libc6 (>= 2.8), libgcrypt11 (>= 1.5.0-0), libtasn1-3 (>= 1.6-0), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: gnutls-bin
+Breaks: libsoup2.4-1 (= 2.31.2-1), libsoup2.4-1 (<= 2.30.1-1)
+Conflicts: gnutls0, gnutls0.4
+Size: 428108
+Description: the GNU TLS library - runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the runtime libraries.
+Homepage: http://www.gnutls.org/
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+
+Package: libgpm2
+Priority: standard
+Section: libs
+Installed-Size: 92
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gpm
+Version: 1.20.4-3.4ubuntu1
+Depends: libc6 (>= 2.7)
+Suggests: gpm
+Conflicts: gpm (<< 1.20.3~pre3)
+Filename: pool/main/g/gpm/libgpm2_1.20.4-3.4ubuntu1_amd64.deb
+Size: 15932
+MD5sum: 1a32c1a77e087ac6fea2db363cbec819
+Description: General Purpose Mouse - shared library
+ This package provides a library that handles mouse requests
+ and delivers them to applications. See the description for the 'gpm'
+ package for more information.
+Homepage: http://unix.schottelius.org/gpm/
+Original-Maintainer: Debian GPM Team <pkg-gpm-devel@lists.alioth.debian.org>
+
+Package: libdb5.1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 1564
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: db
+Version: 5.1.25-11
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/d/db/libdb5.1_5.1.25-11_amd64.deb
+Size: 699852
+MD5sum: 1875777876c98991dc4cbd05515ecf84
+Description: Berkeley v5.1 Database Libraries [runtime]
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
+SHA1: 0353ef82ff62f22fa40c80046d8d04efa8c3d8d1
+SHA256: b00c97226120ae0192aefc8a2731e09dd955f61362b005ab94721b0eee70e547
+Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Description-md5: f5b074174f649d2f1c6db221bf221e15
+Supported: 18m
+Task: minimal
+
+Package: insserv
+Priority: required
+Section: misc
+Installed-Size: 292
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.14.0-2.1
+Depends: libc6 (>= 2.7)
+Suggests: bootchart
+Breaks: sysv-rc (<< 2.87dsf-3)
+Filename: pool/main/i/insserv/insserv_1.14.0-2.1_amd64.deb
+Size: 50582
+MD5sum: 71515129dd7de125d6d5fc429866a44b
+Description: Tool to organize boot sequence using LSB init.d script dependencies
+Original-Maintainer: Petter Reinholdtsen <pere@debian.org>
+SHA1: e7bfbac655600f9a477e13e06267477035cd564f
+SHA256: fa9aada44a705aad26ba213f206a046bea673ce8d223d08edad417f601d99eae
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Description-md5: 78ec8f3197a2309171b682b64b700c17
+Supported: 18m
+Task: minimal
+
+Package: gzip
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 284
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.3.12-9ubuntu1.1
+Pre-Depends: libc6 (>= 2.4)
+Suggests: less
+Filename: pool/main/g/gzip/gzip_1.3.12-9ubuntu1.1_amd64.deb
+Size: 107272
+MD5sum: 0bd8f0142af87c72c18f9c8f5b5ef2c7
+Description: GNU compression utilities
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+SHA1: 40877ac35af571b5710d63426154ebcfa329bf80
+SHA256: 7f8062b158a04dcda952dc59c7aa8927a106db36c5885dc1f46774606efbb433
+Description-md5: 100720c9e2c6508f1a1f3731537b38e5
+Supported: 18m
+Task: minimal
+
+Package: dpkg
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 6452
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 1.16.0.3ubuntu5
+Pre-Depends: libbz2-1.0, libc6 (>= 2.11), libselinux1 (>= 1.32), zlib1g (>= 1:1.1.4), coreutils (>= 5.93-1), xz-utils
+Suggests: apt
+Breaks: apt (<< 0.7.7), aptitude (<< 0.4.7-1), dpkg-dev (<< 1.15.8), libdpkg-perl (<< 1.15.8), pinfo (<< 0.6.9-3.1), tkinfo (<< 2.8-3.1)
+Filename: pool/main/d/dpkg/dpkg_1.16.0.3ubuntu5_amd64.deb
+Size: 1886406
+MD5sum: f214c84761f763fd226a0df0ffb210ea
+Description: Debian package management system
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+SHA1: 238dcf0ee16d06a8223c1ee5fdf1c090509f6572
+SHA256: a3c33d835e4050e2b09f642e71b4875790d13773c7f855faf406a495ccec4512
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description-md5: 2f156c6a30cc39895ad3487111e8c190
+Supported: 18m
+Task: minimal
+
+Package: libpcre3
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 476
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: pcre3
+Version: 8.12-3ubuntu2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
+Conflicts: libpcre3-dev (<= 4.3-3)
+Filename: pool/main/p/pcre3/libpcre3_8.12-3ubuntu2_amd64.deb
+Size: 149916
+MD5sum: c569bed50ba2c1aff58b39ceec1a924d
+Description: Perl 5 Compatible Regular Expression Library - runtime files
+Original-Maintainer: Mark Baker <mark@mnb.org.uk>
+SHA1: f6685a82f8b0b08504e4533709a0c2ee8e22195a
+SHA256: 6b1b9998ffc8269f0a060d23f8e26cf69c6858f98dbabf6bd1d262ffe8082590
+Description-md5: ab0ea99159dc866cd24051e8eda806df
+Supported: 18m
+Task: minimal
+
+Package: libncursesw5
+Priority: required
+Section: libs
+Installed-Size: 608
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: ncurses
+Version: 5.9-1ubuntu5
+Depends: libtinfo5 (= 5.9-1ubuntu5), libc6 (>= 2.4)
+Recommends: libgpm2
+Filename: pool/main/n/ncurses/libncursesw5_5.9-1ubuntu5_amd64.deb
+Size: 163286
+MD5sum: cfb704d5bb911fbc3772ca95b93c9465
+Description: shared libraries for terminal handling (wide character support)
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 40898d28fd23dee4c707545a380b19958d1b5010
+SHA256: a421969455e358c8dfa345219dc017046870628ec8102595ce272c220ffdda7b
+Homepage: http://invisible-island.net/ncurses/
+Description-md5: 1a69a793355bf1fff9186f00b71dd14a
+Supported: 18m
+Task: minimal
+
+Package: libssl-doc
+Priority: optional
+Section: doc
+Installed-Size: 2136
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: openssl
+Version: 1.0.0e-2ubuntu4
+Replaces: libssl-dev (<< 1.0.0), openssl-doc
+Breaks: libssl-dev (<< 1.0.0)
+Conflicts: openssl-doc
+Size: 1032774
+Description: SSL development documentation documentation
+ libssl and libcrypto manpages and demo files.
+ .
+ It is part of the OpenSSL implementation of SSL.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: ubuntu-keyring
+Priority: important
+Section: misc
+Installed-Size: 60
+Maintainer: Michael Vogt <michael.vogt@canonical.com>
+Architecture: all
+Version: 2010.+09.30
+Recommends: gpgv
+Filename: pool/main/u/ubuntu-keyring/ubuntu-keyring_2010.+09.30_all.deb
+Size: 11598
+MD5sum: 2738d8a1c2703d1af7980aeb4c046a33
+Description: GnuPG keys of the Ubuntu archive
+ The Ubuntu project digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: libssl-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 6088
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: openssl
+Version: 1.0.0e-2ubuntu4
+Depends: libssl1.0.0 (= 1.0.0e-2ubuntu4), zlib1g-dev
+Recommends: libssl-doc
+Size: 1471638
+Description: SSL development libraries, header files and documentation
+ libssl and libcrypto development libraries, header files and manpages.
+ .
+ It is part of the OpenSSL implementation of SSL.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: gcc
+Priority: optional
+Section: devel
+Installed-Size: 64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-defaults (1.107ubuntu5)
+Version: 4:4.6.1-2ubuntu5
+Provides: c-compiler
+Depends: cpp (>= 4:4.6.1-2ubuntu5), gcc-4.6 (>= 4.6.1-1)
+Recommends: libc6-dev | libc-dev
+Suggests: gcc-multilib, make, manpages-dev, autoconf, automake1.9, libtool, flex, bison, gdb, gcc-doc
+Conflicts: gcc-doc (<< 1:2.95.3)
+Size: 5110
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This is a dependency package providing the default GNU C compiler.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: busybox-initramfs
+Priority: required
+Section: shells
+Installed-Size: 364
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: busybox
+Version: 1:1.18.4-2ubuntu2
+Replaces: busybox-cvs-initramfs
+Depends: libc6 (>= 2.11)
+Conflicts: busybox-cvs-initramfs
+Filename: pool/main/b/busybox/busybox-initramfs_1.18.4-2ubuntu2_amd64.deb
+Size: 177970
+MD5sum: b59ac5319a2e7039fd032ee56b9cf070
+Description: Standalone shell setup for initramfs
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+SHA1: c42780d3570a705d0dd065bc29fd7180129d75a6
+SHA256: 48ecb94d6501498d6aaf6b24ed0fe987bf6231c092bdca8994db42ebc0f92faa
+Homepage: http://www.busybox.net
+Description-md5: 094502bbe824d039d9076393a5ce9673
+Supported: 18m
+Task: minimal
+
+Package: iputils-ping
+Priority: important
+Section: net
+Installed-Size: 152
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: iputils
+Version: 3:20101006-1
+Replaces: netbase (<< 4.00)
+Provides: ping
+Depends: libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
+Conflicts: ping, suidmanager (<< 0.50)
+Size: 55884
+Description: Tools to test the reachability of network hosts
+ The ping command sends ICMP ECHO_REQUEST packets to a host in order to
+ test if the host is reachable via the network.
+ .
+ This package includes a ping6 utility which supports IPv6 network
+ connections.
+Original-Maintainer: Noah Meyerhans <noahm@debian.org>
+
+Package: libbz2-1.0
+Priority: required
+Section: libs
+Installed-Size: 124
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: bzip2
+Version: 1.0.5-6ubuntu1
+Depends: libc6 (>= 2.4)
+Filename: pool/main/b/bzip2/libbz2-1.0_1.0.5-6ubuntu1_amd64.deb
+Size: 34064
+MD5sum: 7463b87af7e08a8d110dcf64dca15146
+Description: high-quality block-sorting file compressor library - runtime
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: 35a8637519eada145ef87e07a6cbac6cfa09acc6
+SHA256: ae444cdae95725167800f058e6b4c029d30257c31a9740ece52365768e124b1e
+Homepage: http://www.bzip.org/
+Description-md5: e921dd6ddb4bb508e6f1b62169b85d70
+Supported: 18m
+Task: minimal
+
+Package: git
+Priority: optional
+Section: vcs
+Installed-Size: 10848
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:1.7.5.4-1
+Replaces: cogito (<< 0.16rc2-0), git-core (<< 1:1.7.0.4-1.), gitweb (<< 1:1.7.4~rc1)
+Provides: git-completion, git-core
+Depends: libc6 (>= 2.7), libcurl3-gnutls (>= 7.16.2-1), libexpat1 (>= 1.95.8), zlib1g (>= 1:1.2.0), perl-modules, liberror-perl, git-man (>> 1:1.7.5.4), git-man (<< 1:1.7.5.4-.)
+Recommends: patch, less, rsync, ssh-client
+Suggests: git-doc, git-el, git-arch, git-cvs, git-svn, git-email, git-daemon-run, git-gui, gitk, gitweb
+Breaks: cogito (<= 0.18.2+), git-buildpackage (<< 0.4.38), git-core (<< 1:1.7.0.4-1.), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), gitweb (<< 1:1.7.4~rc1), guilt (<< 0.33), qgit (<< 1.5.5), stgit (<< 0.15), stgit-contrib (<< 0.15)
+Conflicts: git-core (<< 1:1.5.2~rc3-2.)
+Size: 4751654
+Description: fast, scalable, distributed revision control system
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git main components with minimal dependencies.
+ Additional functionality, e.g. a graphical user interface and revision
+ tree visualizer, tools for interoperating with other VCS's, or a web
+ interface, is provided as separate git* packages.
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+Homepage: http://git-scm.com/
+
+Package: perl
+Priority: standard
+Section: perl
+Installed-Size: 17652
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.12.4-4
+Replaces: libarchive-tar-perl (<= 1.38-2), libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libmodule-corelist-perl (<< 2.14-2), libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl-base (<< 5.10.1-12), perl-doc (<< 5.8.0-1), perl-modules (<< 5.8.1-1)
+Provides: data-dumper, libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl5
+Depends: perl-base (= 5.12.4-4), perl-modules (>= 5.12.4-4), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3.dfsg)
+Recommends: netbase
+Suggests: perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make
+Breaks: libcompress-raw-bzip2-perl (<< 2.024), libcompress-raw-zlib-perl (<< 2.024), libcompress-zlib-perl (<< 2.024), libdevel-dprof-perl (<< 20080331.00), libdigest-md5-perl (<< 2.39), libdigest-sha-perl (<< 5.47), libencode-perl (<< 2.39), libio-compress-base-perl (<< 2.024), libio-compress-bzip2-perl (<< 2.024), libio-compress-perl (<< 2.024), libio-compress-zlib-perl (<< 2.024), libmime-base64-perl (<< 3.08), libstorable-perl (<< 2.22), libsys-syslog-perl (<< 0.27), libthreads-perl (<< 1.75), libthreads-shared-perl (<< 1.32), libtime-hires-perl (<< 1.9719), libtime-piece-perl (<< 1.15.01), mrtg (<< 2.16.3-3.1), perl-doc (<< 5.12.4-1)
+Size: 4224020
+Description: Larry Wall's Practical Extraction and Report Language
+ An interpreted scripting language, known among some as "Unix's Swiss
+ Army Chainsaw".
+ .
+ Perl is optimised for scanning arbitrary text files and system
+ administration.  It has built-in extended regular expression matching
+ and replacement, a data-flow mechanism to improve security with
+ setuid scripts and is extensible via modules that can interface to C
+ libraries.
+Original-Maintainer: Niko Tyni <ntyni@debian.org>
+
+Package: libdrm-intel1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 124
+Origin: Ubuntu
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libdrm
+Version: 2.4.26-1ubuntu1
+Depends: libc6 (>= 2.3.4), libdrm2 (>= 2.4.3), libpciaccess0
+Pre-Depends: multiarch-support
+Filename: pool/main/libd/libdrm/libdrm-intel1_2.4.26-1ubuntu1_amd64.deb
+Size: 25018
+MD5sum: de2b10bcb659478d7ce7a8aea9cb5530
+Description: Userspace interface to intel-specific kernel DRM services -- runtime
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+SHA1: 2e4e349d4151d560e51317d1bf8423bab85ebdd2
+SHA256: e89b6bbd3e082000d737e3fa89fad2547d37c64b0214cd65dafa4012f83c00f6
+Description-md5: a0ec25778ef74dfe186d7ace2946e2e9
+Supported: 18m
+Task: minimal
+
+Package: libtinfo5
+Priority: required
+Section: libs
+Installed-Size: 392
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: ncurses
+Version: 5.9-1ubuntu5
+Depends: libc6 (>= 2.4)
+Filename: pool/main/n/ncurses/libtinfo5_5.9-1ubuntu5_amd64.deb
+Size: 68136
+MD5sum: 89e3785bf27763edcaf087fbff3c750f
+Description: shared low-level terminfo library for terminal handling
+Original-Maintainer: Craig Small <csmall@debian.org>
+SHA1: 9c4d63bffa1820f22cbef66687ffec62a95b84a0
+SHA256: b4bf0d12d1f19c6f14f355d981767ab96dca26da177b50d202459acf0c0d0847
+Homepage: http://invisible-island.net/ncurses/
+Description-md5: f681846d99e5156a0882bb53c35d3244
+Supported: 18m
+Task: minimal
+
+Package: liblua5.1-0
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 240
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: lua5.1
+Version: 5.1.4-10
+Depends: libc6 (>= 2.11)
+Pre-Depends: multiarch-support
+Size: 88980
+Description: Shared library for the Lua interpreter version 5.1
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+Original-Maintainer: John V. Belmonte <jbelmonte@debian.org>
+Homepage: http://www.lua.org
+
+Package: zlib1g-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 444
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: zlib
+Version: 1:1.2.3.4.dfsg-3ubuntu3
+Provides: libz-dev
+Depends: zlib1g (= 1:1.2.3.4.dfsg-3ubuntu3), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Size: 166616
+Description: compression library - development
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the development support
+ files.
+Homepage: http://zlib.net/
+Original-Maintainer: Mark Brown <broonie@debian.org>
+
+Package: libpciaccess0
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 92
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libpciaccess
+Version: 0.12.1-2
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: pciutils
+Filename: pool/main/libp/libpciaccess/libpciaccess0_0.12.1-2_amd64.deb
+Size: 20074
+MD5sum: 1f7450859343f7395afb0e16e5e4d610
+Description: Generic PCI access library for X
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+SHA1: b3dd96a2391cbc33a12ee11dd53d252d7f43e45d
+SHA256: 9f2586b05e2fb088038b1f3b785b48cb2478356d3ffec844cce7c37a616110f8
+Description-md5: 6a3a8434290002dc03f21f8a07b9357c
+Supported: 18m
+Task: minimal
+
+Package: libc-bin
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: libs
+Installed-Size: 3340
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: eglibc
+Version: 2.13-20ubuntu5
+Replaces: libc0.1, libc0.3, libc6, libc6.1
+Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
+Filename: pool/main/e/eglibc/libc-bin_2.13-20ubuntu5_amd64.deb
+Size: 994480
+MD5sum: ca1e10ad2464f30f837f09461e109bc9
+Description: Embedded GNU C Library: Binaries
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+SHA1: e73691bf461b0733e018bd03ab567154a1bdce4b
+SHA256: 693d770d4c3e33569723210d0d9aefe0be0b6dede9eb5a9365c3d337ac39055d
+Homepage: http://www.eglibc.org
+Description-md5: 90523935f9c97be3a67bc8a1596de79b
+Supported: 18m
+Task: minimal
+
+Package: mime-support
+Priority: standard
+Section: net
+Installed-Size: 192
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 3.51-1ubuntu1
+Recommends: file (>= 3.27-3)
+Conflicts: a2ps (<< 4.10.4), metamail (<< 2.7-44)
+Filename: pool/main/m/mime-support/mime-support_3.51-1ubuntu1_all.deb
+Size: 30706
+MD5sum: 6ec39cd9deddc4eeda3ce4dd48187378
+Description: MIME files 'mime.types' & 'mailcap', and support programs
+ As these files can be used by all MIME compliant programs, they
+ have been moved into their own package that others can depend upon.
+ .
+ Other packages add themselves as viewers/editors/composers/etc by
+ using the provided "update-mime" program.
+ .
+ In addition, the commands "see", "edit", "compose", and "print"
+ will display, alter, create, and print (respectively) any file using
+ a program determined from the entries in the mime.types and mailcap
+ files.
+Original-Maintainer: Brian White <bcwhite@pobox.com>
+
+Package: libldap-2.4-2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 524
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: openldap
+Version: 2.4.25-1.1ubuntu4
+Replaces: libldap-2.3-0, libldap2
+Depends: libc6 (>= 2.12), libgcrypt11 (>= 1.5.0-0), libgnutls26 (>= 2.9.11-0), libgssapi-krb5-2 (>= 1.7+dfsg), libsasl2-2
+Pre-Depends: multiarch-support
+Conflicts: ldap-utils (<= 2.1.23-1)
+Size: 183738
+Description: OpenLDAP libraries
+ These are the run-time libraries for the OpenLDAP (Lightweight Directory
+ Access Protocol) servers and clients.
+Homepage: http://www.openldap.org/
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+
+Package: sysvinit-utils
+Priority: required
+Section: admin
+Installed-Size: 304
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: sysvinit
+Version: 2.88dsf-13.10ubuntu4
+Replaces: last, sysvinit (<= 2.86.ds1-65)
+Depends: libc6 (>= 2.8), libselinux1 (>= 1.32)
+Recommends: upstart (>= 0.6.3-4)
+Suggests: sash
+Conflicts: chkconfig (<< 11.0-79.1-2), last, sysvconfig
+Filename: pool/main/s/sysvinit/sysvinit-utils_2.88dsf-13.10ubuntu4_amd64.deb
+Size: 64670
+MD5sum: 13273cdeddd678a7aca00995f79e9870
+Description: System-V-like utilities
+Original-Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
+SHA1: b7205ddf99c84ceb11db1133245b9b18bac910c5
+SHA256: d3678d039ef516c839c410a05d639fc53b4853ce01d54444708efe05f38255f3
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Description-md5: 1d2bc4c9c32104729144c7578ecd30bd
+Supported: 18m
+Task: minimal
+
+Package: multiarch-support
+Multi-Arch: foreign
+Priority: required
+Section: libs
+Installed-Size: 204
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: eglibc
+Version: 2.13-20ubuntu5
+Depends: libc6 (>= 2.3.6-2)
+Filename: pool/main/e/eglibc/multiarch-support_2.13-20ubuntu5_amd64.deb
+Size: 4478
+MD5sum: a86918269b1213a2a6d15c5af7f27b97
+Description: Transitional package to ensure multiarch compatibility
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+SHA1: ffe8b913d70233ea15ad33f27d53fe6ef32b5355
+SHA256: 950b7c5e1f1830c36544ce697825561734e16a3aca68bfaad6b9c49444b84973
+Homepage: http://www.eglibc.org
+Description-md5: f70fd4ad370040691119c10d77aec677
+Supported: 18m
+Task: minimal
+
+Package: libedit2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 200
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libedit
+Version: 2.11-20080614-2.2
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.11), libncurses5 (>= 5.5-5~)
+Pre-Depends: multiarch-support
+Size: 70254
+Description: BSD editline and history libraries
+ The editline library provides generic line editing and
+ history functions.
+ .
+ It slightly resembles GNU readline
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://ftp.netbsd.org/pub/NetBSD/NetBSD-release-5-0/src/lib/libedit/
+
+Package: libnih-dbus1
+Priority: required
+Section: libs
+Installed-Size: 80
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libnih
+Version: 1.0.3-4ubuntu2
+Depends: libnih1 (= 1.0.3-4ubuntu2), libc6 (>= 2.3.4), libdbus-1-3 (>= 1.2.16)
+Filename: pool/main/libn/libnih/libnih-dbus1_1.0.3-4ubuntu2_amd64.deb
+Size: 15712
+MD5sum: c2b446e711b6416a1c3024f3e1df542a
+Description: NIH D-Bus Bindings Library
+Original-Maintainer: Scott James Remnant <scott@netsplit.com>
+SHA1: c952543c578db43e27eeb9dedcc2785182d79980
+SHA256: 99cc875f8fecfecbdd3c35765575da3bde4a32f5dec7e0ca1f1ea0a0a7bc1ab6
+Homepage: https://launchpad.net/libnih
+Description-md5: f01452c73291e3ad9d2f133824043b65
+Supported: 18m
+Task: minimal
+
+Package: libx11-data
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Installed-Size: 2044
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: all
+Source: libx11
+Version: 2:1.4.4-2ubuntu1
+Breaks: libx11-6 (<< 2:1.4.1)
+Size: 171540
+Description: X11 client-side library
+ This package provides the locale data files for libx11.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libselinux1
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 232
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libselinux
+Version: 2.0.98-1.1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Filename: pool/main/libs/libselinux/libselinux1_2.0.98-1.1_amd64.deb
+Size: 64450
+MD5sum: de7846b100888101889b809dac2da2fe
+Description: SELinux runtime shared libraries
+Original-Maintainer: Manoj Srivastava <srivasta@debian.org>
+SHA1: 7f6518b79339a45662099eb18d50060be1bd6575
+SHA256: 0add0ad7878fe2a768672e853c6d74562a8fe87d79bae8175957d66ed04cdade
+Description-md5: 90f6e1cb06c527bc3fc11ec6f969c59c
+Supported: 18m
+Task: minimal
+
+Package: openssh-client
+Priority: standard
+Section: net
+Installed-Size: 2400
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Source: openssh
+Version: 1:5.8p1-7ubuntu1
+Replaces: ssh, ssh-krb5
+Provides: rsh-client, ssh-client
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libgssapi-krb5-2 (>= 1.7+dfsg), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, adduser (>= 3.10), dpkg (>= 1.7.0), passwd
+Recommends: xauth
+Suggests: ssh-askpass, libpam-ssh, keychain, monkeysphere, openssh-blacklist, openssh-blacklist-extra
+Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7)
+Size: 933172
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+Homepage: http://www.openssh.org/
+Original-Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+
+Package: vim-runtime
+Priority: optional
+Section: editors
+Installed-Size: 26016
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: vim
+Version: 2:7.3.154+hg~74503f6ee649-2ubuntu3
+Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
+Breaks: vim-tiny (<< 2:7.3.154+hg~74503f6ee649-2ubuntu3)
+Enhances: vim-tiny
+Filename: pool/main/v/vim/vim-runtime_7.3.154+hg~74503f6ee649-2ubuntu3_all.deb
+Size: 5944824
+MD5sum: 75cdc82f4c25dfae9f7b5848a8309eaf
+Description: Vi IMproved - Runtime files
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains vimtutor and the architecture independent runtime
+ files, used, if available, by all vim variants available in Debian.
+ Example of such runtime files are: online documentation, rules for
+ language-specific syntax highlighting and indentation, color schemes,
+ and standard plugins.
+Homepage: http://www.vim.org/
+Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: gcc-4.6-base
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 204
+Origin: Ubuntu
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: gcc-4.6
+Version: 4.6.1-9ubuntu3
+Breaks: gcj-4.6-base (<< 4.6.1-3ubuntu3), gnat-4.6 (<< 4.6.1-4ubuntu3)
+Filename: pool/main/g/gcc-4.6/gcc-4.6-base_4.6.1-9ubuntu3_amd64.deb
+Size: 16154
+MD5sum: 8cd48d57060645f1e8753cdc4bcdc8c0
+Description: GCC, the GNU Compiler Collection (base package)
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+SHA1: fc6e74b22d4ad7500e7d0e97390662ee28844a03
+SHA256: 5475289a96174ebadfaf1884dc1e4879174da5184d1e6ea4681a71fedd2103d3
+Homepage: http://gcc.gnu.org/
+Description-md5: b6e93638a6d08ea7a18929d7cf078e5d
+Supported: 18m
+Task: minimal
+
+Package: libc6
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 10468
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: eglibc
+Version: 2.13-20ubuntu5
+Replaces: belocs-locales-bin, libc6-amd64
+Provides: glibc-2.13-1
+Depends: libc-bin (= 2.13-20ubuntu5), libgcc1, tzdata
+Suggests: glibc-doc, debconf | debconf-2.0, locales
+Breaks: nscd (<< 2.13)
+Conflicts: belocs-locales-bin, libc6-amd64, prelink (<< 0.0.20090925), tzdata (<< 2007k-1), tzdata-etch
+Filename: pool/main/e/eglibc/libc6_2.13-20ubuntu5_amd64.deb
+Size: 4301198
+MD5sum: d5530de57cf309897250ba63d44f61cf
+Description: Embedded GNU C Library: Shared libraries
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+SHA1: 1ac02c1077073d4b816646b6726831f88cec6976
+SHA256: c567c175ddf3312f4e392a4331bca790c26f6898990eb27291d26885dd72b291
+Homepage: http://www.eglibc.org
+Description-md5: 5089b4da6684d7432ab618fb5b79cec5
+Supported: 18m
+Task: minimal
+
+Package: libpng12-0
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 344
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: libpng
+Version: 1.2.46-3ubuntu1
+Replaces: libpng12-dev (<= 1.2.8rel-7)
+Depends: libc6 (>= 2.11), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
+Filename: pool/main/libp/libpng/libpng12-0_1.2.46-3ubuntu1_amd64.deb
+Size: 131946
+MD5sum: 617f76866c4c0a3dc1ca3996d93676ac
+Description: PNG library - runtime
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+SHA1: 691c8d6cea0112fda06b2b3ac230ca1f6cc68069
+SHA256: 9aed50dd9e98d22a73443e36c34a029c6447523f7017d772bf4b41926dd6360d
+Homepage: http://libpng.org/pub/png/libpng.html
+Description-md5: f250be9224d67eae99b2f562b74a33bf
+Supported: 18m
+Task: minimal
+
+Package: udev
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 1468
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 173-0ubuntu4
+Depends: libacl1 (>= 2.2.51-3), libc6 (>= 2.10), libglib2.0-0 (>= 2.16.0), libselinux1 (>= 1.32), upstart-job, libudev0 (>= 173), module-init-tools (>= 3.2.1-0ubuntu3), initramfs-tools (>= 0.92bubuntu63), procps, adduser, util-linux (>> 2.15~rc2)
+Suggests: watershed
+Filename: pool/main/u/udev/udev_173-0ubuntu4_amd64.deb
+Size: 341208
+MD5sum: daa550c26dd2c21175d70115a2a2b67c
+Description: rule-based device node and kernel event manager
+SHA1: 5e75d5586fa00c95b515faf5dd9c2948eb89cfb9
+SHA256: c7859868ebd0b5f6d6e17070931848846fa6c11d90a2bb86bd47d4339cfdbcc7
+Homepage: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+Description-md5: 2a0ce683ea15310e7ba291148124cb1e
+Supported: 18m
+Task: minimal
+
+Package: python-setuptools
+Priority: optional
+Section: python
+Installed-Size: 1044
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: distribute
+Version: 0.6.16-1
+Replaces: python-distribute (<< 0.6.6), python2.3-setuptools, python2.4-setuptools
+Provides: python-distribute, python2.6-setuptools, python2.7-setuptools
+Depends: python (>= 2.6), python (<< 2.8), python-pkg-resources (= 0.6.16-1)
+Conflicts: python-distribute (<< 0.7), python2.3-setuptools (<< 0.6b2), python2.4-setuptools (<< 0.6b2)
+Filename: pool/main/d/distribute/python-setuptools_0.6.16-1_all.deb
+Size: 211854
+MD5sum: 0bc4196f218f82af82b85406f4135c28
+Description: Python Distutils Enhancements (setuptools compatibility)
+ Extensions to the python-distutils for large or complex distributions.
+ .
+ Package providing compatibility with old setuptools (0.6c9).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://packages.python.org/distribute
+Python-Version: 2.6, 2.7
+
+Package: bash
+Essential: yes
+Priority: required
+Section: shells
+Installed-Size: 1372
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 4.2-0ubuntu4
+Replaces: bash-completion (<< 20060301-0), bash-doc (<= 2.05-1)
+Depends: base-files (>= 2.1.12), debianutils (>= 2.15)
+Pre-Depends: dash, libc6 (>= 2.11), libncurses5 (>= 5.5-5~)
+Recommends: bash-completion (>= 20060301-0)
+Suggests: bash-doc
+Conflicts: bash-completion (<< 20060301-0)
+Filename: pool/main/b/bash/bash_4.2-0ubuntu4_amd64.deb
+Size: 607786
+MD5sum: 0e9c283140bab405feb1fb9cd3e9e8ea
+Description: The GNU Bourne Again SHell
+Original-Maintainer: Matthias Klose <doko@debian.org>
+SHA1: c4a6941f8e2b35e817d97b8501991ead347dbfca
+SHA256: 5436984bb045dc4d5438ddccc18b1c60c7fa99d3fa65eba192f307b1df796260
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Description-md5: 82836500b5a514df81f56f5dc639231c
+Supported: 18m
+Task: minimal
+
+Package: util-linux
+Essential: yes
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 1836
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 2.19.1-2ubuntu3
+Replaces: e2fsprogs, fdisk, linux32, miscutils, schedutils, setterm, sparc-utils
+Provides: linux32, schedutils
+Depends: lsb-base (>= 3.0-6), tzdata (>= 2006c-2), dpkg (>= 1.15.4) | install-info, debconf (>= 0.5) | debconf-2.0, upstart-job
+Pre-Depends: libblkid1 (>= 2.19.1), libc6 (>= 2.11), libncurses5 (>= 5.5-5~), libselinux1 (>= 1.32), libslang2 (>= 2.0.7-1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Suggests: util-linux-locales, kbd | console-tools, dosfstools
+Conflicts: console-tools (<< 1:0.2.3-21), fdisk, kbd (<< 1.05-3), linux32, schedutils, setterm
+Filename: pool/main/u/util-linux/util-linux_2.19.1-2ubuntu3_amd64.deb
+Size: 553320
+MD5sum: b62e51f745c074fb655020e7407eaeb2
+Description: Miscellaneous system utilities
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+SHA1: 059dd8f3bc5f4bddb055e93d9b9781d2876f154f
+SHA256: 9aac581776205f95fc26386e169d5014df11b3ffefa97a496b75ef2453e367a3
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Description-md5: ed29c47368a140794fd6df09a19c1372
+Supported: 18m
+Task: minimal
+
+Package: libgmp10
+Priority: optional
+Section: libs
+Installed-Size: 532
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gmp
+Version: 2:5.0.1+dfsg-7ubuntu2
+Depends: libc6 (>= 2.7)
+Size: 250494
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+Homepage: http://gmplib.org/
+Original-Maintainer: Debian Scientific Computing Team <pkg-scicomp-devel@lists.alioth.debian.org>
+
+Package: cpio
+Priority: required
+Section: utils
+Installed-Size: 328
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Version: 2.11-7ubuntu1
+Replaces: cpio-mt
+Depends: libc6 (>= 2.6), dpkg (>= 1.15.4) | install-info
+Suggests: libarchive1
+Conflicts: cpio-mt, mt-st (<< 0.6)
+Filename: pool/main/c/cpio/cpio_2.11-7ubuntu1_amd64.deb
+Size: 116116
+MD5sum: 96d9ff6867e10789ee0f63923104ceb3
+Description: GNU cpio -- a program to manage archives of files
+Original-Maintainer: Ruben Molina <rmolina@udea.edu.co>
+SHA1: 62e53869a9b08b4c4c08d8ef0c4ee01d1a67f6a5
+SHA256: 734edcf6d34d133f075cb30f89cfe78f62b512e3de23084a8b7fcb8acefe388a
+Homepage: http://www.gnu.org/software/cpio/
+Description-md5: 5f492bf139a41f29fd2d6fcadf43606e
+Supported: 18m
+Task: minimal
+
+Package: libstdc++6
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 1236
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-4.6
+Version: 4.6.1-9ubuntu3
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1)
+Pre-Depends: multiarch-support
+Conflicts: scim (<< 1.4.2-1)
+Filename: pool/main/g/gcc-4.6/libstdc++6_4.6.1-9ubuntu3_amd64.deb
+Size: 328672
+MD5sum: 4cb7a6048001d01aab71eb296003ba89
+Description: GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libmpfr4
+Priority: optional
+Section: libs
+Installed-Size: 724
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mpfr4
+Version: 3.0.1-5
+Depends: libc6 (>= 2.4), libgmp10
+Conflicts: libgmp3 (<< 4.1.4-3)
+Size: 188462
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+Original-Maintainer: Laurent Fousse <lfousse@debian.org>
+Homepage: http://www.mpfr.org/
+
+Package: ca-certificates
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Installed-Size: 800
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 20110502+nmu1ubuntu5
+Depends: openssl (>= 1.0.0e-2ubuntu2), debconf (>= 0.5) | debconf-2.0
+Conflicts: ca-certificates-java (= 20110912ubuntu1)
+Enhances: openssl
+Size: 164378
+Description: Common CA certificates
+ This package includes PEM files of CA certificates to allow SSL-based
+ applications to check for the authenticity of SSL connections.
+ .
+ It includes, among others, certificate authorities used by the Debian
+ infrastructure and those shipped with Mozilla's browsers.
+ .
+ Please note that certificate authorities whose certificates are
+ included in this package are not in any way audited for
+ trustworthiness and RFC 3647 compliance, and that full responsibility
+ to assess them belongs to the local system administrator.
+Original-Maintainer: Debian QA Group <packages@qa.debian.org>
+
+Package: binutils
+Priority: optional
+Section: devel
+Installed-Size: 8544
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.21.53.20110810-0ubuntu3
+Replaces: binutils-gold (<< 2.20.51.20100415)
+Provides: elf-binutils
+Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.0)
+Suggests: binutils-doc (>= 2.21.53.20110810-0ubuntu3)
+Conflicts: binutils-gold (<< 2.20.51.20100415), elf-binutils, gas, modutils (<< 2.4.19-1)
+Size: 2635452
+Description: The GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libnet1
+Priority: optional
+Section: libs
+Installed-Size: 188
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libnet
+Version: 1.1.4-2
+Depends: libc6 (>= 2.4)
+Size: 60626
+Description: library for the construction and handling of network packets
+ libnet provides a portable framework for low-level network packet
+ writing and handling.
+ .
+ libnet features portable packet creation interfaces at the IP layer
+ and link layer, as well as a host of supplementary functionality.
+ .
+ Using libnet, quick and simple packet assembly applications can be
+ whipped up with little effort. With a bit more time, more complex
+ programs can be written (Traceroute and ping were easily rewritten
+ using libnet and libpcap).
+ .
+ This package contains the shared library.
+Original-Maintainer: Stefanos Harhalakis <v13@v13.gr>
+Homepage: http://libnet-dev.sourceforge.net/
+
+Package: less
+Priority: standard
+Section: text
+Installed-Size: 324
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 444-1ubuntu1
+Depends: libc6 (>= 2.11), libncurses5 (>= 5.5-5~), debianutils (>= 1.8)
+Size: 113616
+Description: pager program similar to more
+ This package provides "less", a file pager (that is, a memory-efficient
+ utility for displaying text one screenful at a time). Unlike the basic
+ pager "more", it is capable of both backward and forward navigation
+ through a file. As part of the GNU project, it is widely regarded as
+ the standard pager on UNIX-derived systems.
+ .
+ Also provided are "lessecho", a simple utility for ensuring arguments
+ with spaces are correctly quoted; "lesskey", a tool for modifying the
+ standard (vi-like) keybindings; and "lesspipe", a filter for specific
+ types of input, such as .doc or .txt.gz files.
+Homepage: http://www.greenwoodsoftware.com/less/
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+
+Package: libglib2.0-0
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 3656
+Origin: Ubuntu
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Architecture: amd64
+Source: glib2.0
+Version: 2.30.0-0ubuntu4
+Replaces: libglib2.0-dev (<< 2.23.2-2)
+Depends: libc6 (>= 2.9), libffi6 (>= 3.0.4), libpcre3 (>= 8.10), libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
+Pre-Depends: multiarch-support
+Recommends: libglib2.0-data, shared-mime-info
+Breaks: gnome-control-center (<< 1:3), gvfs (<< 1.8), libgtk-3-0 (<= 3.1.8-0ubuntu5)
+Conflicts: bamfdaemon (<= 0.2.92-0ubuntu1), libzeitgeist-gio, wncksyncdaemon
+Filename: pool/main/g/glib2.0/libglib2.0-0_2.30.0-0ubuntu4_amd64.deb
+Size: 1168694
+MD5sum: b1e2160c129bf1ae5e8bc6ad7823f588
+Description: GLib library of C routines
+Original-Maintainer: Loic Minier <lool@dooz.org>
+SHA1: 96975804553cd6da77581a3cf450736abbfb06cc
+SHA256: 0cebeac80edcdd84e3a7af6bc3de308bad1ff8d18b2a3fac9bd33980daf73625
+Homepage: http://www.gtk.org/
+Description-md5: f44de6293be1aa02cd13d73f591580a9
+Supported: 18m
+Task: minimal
+
+Package: libgomp1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 100
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-4.6
+Version: 4.6.1-9ubuntu3
+Depends: gcc-4.6-base (= 4.6.1-9ubuntu3), libc6 (>= 2.6)
+Pre-Depends: multiarch-support
+Size: 25420
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran 95 compilers
+ in the GNU Compiler Collection.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: readline-common
+Priority: important
+Section: utils
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: readline6
+Version: 6.2-2ubuntu1
+Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+Depends: dpkg (>= 1.15.4) | install-info
+Conflicts: libreadline-common, libreadline5 (<< 5.0-11)
+Filename: pool/main/r/readline6/readline-common_6.2-2ubuntu1_all.deb
+Size: 49810
+MD5sum: 5256073a7b50fde2f8d7d58cb4da66f1
+Description: GNU readline and history libraries, common files
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libkrb5-3
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 992
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: krb5
+Version: 1.9.1+dfsg-1ubuntu1
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.9.1+dfsg-1ubuntu1)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.6.dfsg.4~beta1-9), sssd (<= 1.2.1-4.1ubuntu2)
+Conflicts: libapache-mod-auth-kerb (<= 4.996-5.0-rc6-2), libapache2-mod-auth-kerb (<= 4.996-5.0-rc6-2), ssh-krb5 (<< 3.8.1p1-10)
+Size: 349866
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+
+Package: libxau6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 72
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxau
+Version: 1:1.0.6-3
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 8312
+Description: X11 authorisation library
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXau
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+

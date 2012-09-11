@@ -1,0 +1,17 @@
+f2bd08c6713a695715ad40d26e38d83e  usr/bin/mawk
+5b5b6101851fd08434e1dec1f4cd6ad7  usr/share/man/man1/mawk.1.gz
+0094c63b7b93e190aa7b677c4667e8b6  usr/share/doc/mawk/examples/decl.awk.gz
+8efbbd5733a5dcc505487672b12b2d98  usr/share/doc/mawk/examples/deps.awk.gz
+96568664d5c752740bd9ad818c085e2a  usr/share/doc/mawk/examples/gdecl.awk.gz
+32ff09378e923df2f0c8582feade5eaf  usr/share/doc/mawk/examples/hcal.gz
+058d4d69291e88ec33858645a88ab65c  usr/share/doc/mawk/examples/hical.gz
+f4a48a3269f2bf1722a2e311213cf2e4  usr/share/doc/mawk/examples/nocomment.awk.gz
+f9b47a662df7527cccc9803d60cf2091  usr/share/doc/mawk/examples/primes.awk.gz
+fc1628518388273c7ce2f689bca4b031  usr/share/doc/mawk/examples/qsort.awk.gz
+804593dee5111bf24050eb9bf0e0ef41  usr/share/doc/mawk/examples/ct_length.awk.gz
+0a843660073a0e312612d3f0e4b018c8  usr/share/doc/mawk/examples/eatc.awk.gz
+86fd70a0b749595f4bc6fe8636fe082c  usr/share/doc/mawk/copyright
+a5144725c799fae619c63db82f9ca99e  usr/share/doc/mawk/README.gz
+e5cfb37cbb7f233ecb0c0851d6bb3f94  usr/share/doc/mawk/ACKNOWLEDGMENT.gz
+c38785ece2e113a3608cdea399636d36  usr/share/doc/mawk/changelog.gz
+c2aac184bd62b84f97d663529fe1bb57  usr/share/doc/mawk/changelog.Debian.gz

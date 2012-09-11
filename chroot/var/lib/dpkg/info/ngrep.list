@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/ngrep
+/usr/share
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/ngrep.8.gz
+/usr/share/doc
+/usr/share/doc/ngrep
+/usr/share/doc/ngrep/changelog.gz
+/usr/share/doc/ngrep/CREDITS.txt
+/usr/share/doc/ngrep/REGEX.txt
+/usr/share/doc/ngrep/README.Debian
+/usr/share/doc/ngrep/copyright
+/usr/share/doc/ngrep/README.txt.gz
+/usr/share/doc/ngrep/changelog.Debian.gz
