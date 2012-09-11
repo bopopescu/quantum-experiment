@@ -1,3 +1,8 @@
 /chroot/var/cache/ldconfig/aux-cache
-/chroot/root
 /chroot/tmp
+/chroot/root/.bash_history
+/chroot/root/.[^b]*
+/chroot/root/bin/
+/chroot/root/logs/
+/chroot/root/eutester/
+/chroot/root/tests/
