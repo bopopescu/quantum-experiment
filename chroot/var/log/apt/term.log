@@ -73,3 +73,10 @@ Log started: 2012-09-11  05:23:26
 Can not write log, openpty() failed (/dev/pts not mounted?)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 Log ended: 2012-09-11  05:23:26
+
+Log started: 2012-09-11  08:51:26
+Selecting previously deselected package python-crypto.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18833 files and directories currently installed.)
+Unpacking python-crypto (from .../python-crypto_2.3-2_amd64.deb) ...
+Setting up python-crypto (2.3-2) ...
+Log ended: 2012-09-11  08:51:27

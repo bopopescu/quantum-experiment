@@ -148,6 +148,27 @@ Description-md5: 48860743f55caefbd309e769afd42d3f
 Supported: 18m
 Task: minimal
 
+Package: libsysfs2
+Priority: important
+Section: libs
+Installed-Size: 108
+Maintainer: Martin Pitt <martin.pitt@ubuntu.com>
+Architecture: amd64
+Source: sysfsutils
+Version: 2.1.0+repack-1
+Depends: libc6 (>= 2.4)
+Size: 23868
+Description: interface library to sysfs
+ Sysfs is a virtual file system in Linux kernel 2.5+ that provides a
+ tree of system devices. libsysfs provides a stable programming
+ interface to sysfs and eases querying system devices and their
+ attributes.
+ .
+ The package sysfsutils contains frontend programs that use this
+ library. Development files and C examples are provided by the package
+ libsysfs-dev.
+Original-Maintainer: Martin Pitt <mpitt@debian.org>
+
 Package: libxmuu1
 Priority: optional
 Section: libs
@@ -4386,6 +4407,25 @@ Description: GNU Standard C++ Library v3
  in g++-3.0.
 Homepage: http://gcc.gnu.org/
 Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: iputils-arping
+Priority: extra
+Section: net
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: iputils
+Version: 3:20101006-1
+Replaces: netbase (<< 4.00)
+Depends: libc6 (>= 2.4), libsysfs2
+Conflicts: arping, iputils-ping (<< 20001110-6), suidmanager (<< 0.50)
+Size: 21958
+Description: Tool to send ICMP echo requests to an ARP address
+ The arping command acts like the standard ping command except it pings
+ a machine by its ARP address instead of its IP address.  It is typically
+ used to locate a machine if its hardware address is known but its IP
+ address is unknown
+Original-Maintainer: Noah Meyerhans <noahm@debian.org>
 
 Package: libmpfr4
 Priority: optional

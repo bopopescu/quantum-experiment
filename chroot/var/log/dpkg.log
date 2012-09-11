@@ -2058,3 +2058,13 @@
 2012-09-11 05:23:26 trigproc libc-bin 2.13-20ubuntu5 <none>
 2012-09-11 05:23:26 status half-configured libc-bin 2.13-20ubuntu5
 2012-09-11 05:23:26 status installed libc-bin 2.13-20ubuntu5
+2012-09-11 08:51:26 startup archives unpack
+2012-09-11 08:51:26 install python-crypto <none> 2.3-2
+2012-09-11 08:51:26 status half-installed python-crypto 2.3-2
+2012-09-11 08:51:26 status unpacked python-crypto 2.3-2
+2012-09-11 08:51:26 status unpacked python-crypto 2.3-2
+2012-09-11 08:51:26 startup packages configure
+2012-09-11 08:51:26 configure python-crypto 2.3-2 <none>
+2012-09-11 08:51:26 status unpacked python-crypto 2.3-2
+2012-09-11 08:51:26 status half-configured python-crypto 2.3-2
+2012-09-11 08:51:27 status installed python-crypto 2.3-2
