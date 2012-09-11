@@ -25,8 +25,10 @@ bindDir() {
 sudo mkdir -p ${CHROOT}/proc/ && 
 sudo mount -t proc none ${CHROOT}/proc/ &&
 
-sudo mkdir -p ${CHROOT}/dev/pts &&
-sudo mount -t devpts devpts ${CHROOT}/dev/pts &&
+#sudo mkdir -p ${CHROOT}/dev/pts &&
+#sudo mount -t devpts devpts ${CHROOT}/dev/pts &&
+
+sudo mount -o bind /dev chroot/dev &&
 
 bindDir eutester &&
 bindDir tests &&
@@ -35,7 +37,4 @@ bindDir logs &&
 
 sudo -i chroot ${CHROOT}/ ${COMMAND}
 
-sudo umount ${CHROOT}/proc/
-sudo umount ${CHROOT}/dev/pts
-sudo umount ${CHROOT}/root/eutester
-sudo umount ${CHROOT}/root/tests
+mount | awk '/quantum/{print $3}' | xargs -i sudo umount {}
