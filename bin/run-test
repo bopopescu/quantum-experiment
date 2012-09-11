@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ -z "${1}" ]; then
+  echo "Usage: run-test BRANCHNAME"
+  exit 1
+else
+  TOP=$(git rev-parse --show-toplevel)
+  BRANCHNAME=$1
+  TESTBRANCHNAME=$1-$(date +%y%m%d-%H%M.%S)
+  echo "Using branch name: ${BRANCHNAME}"
+  echo "Using test branch name: ${TESTBRANCHNAME}"
+  if ! git checkout -b ${TESTBRANCHNAME} ${BRANCHNAME}; then
+    exit 1
+  fi
+  MESSAGE="Tested ${BRANCHNAME} in ${TESTBRANCHNAME} at $(date)"
+  if echo DO SOMETHING HERE | tee logs/stdout; then
+    MESSAGE="${MESSAGE}\n\tSUCCEEDED\n\n"
+  else
+    MESSAGE="${MESSAGE}\n\tFAILED\n\n"
+  fi
+  TMPFILE=$(mktemp /tmp/run-test-XXXXXXXX)
+  echo -e "${MESSAGE}" > ${TMPFILE}
+  cat ${TOP}/logs/stdout >> ${TMPFILE}
+  git add ${TOP}
+  git commit -a -F ${TMPFILE} 
+  rm -f ${TMPFILE}
+fi
