@@ -38,3 +38,6 @@ class MyFirstTest(EutesterTestcase):
         self.tester.delete_keypair(self.keypair)
         self.tester.local("rm " + self.keypair.name + ".pem")
         self.tester.delete_group(self.group)
+
+if __name__ == '__main__':
+    unittest.main()
