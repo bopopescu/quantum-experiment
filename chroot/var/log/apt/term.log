@@ -80,3 +80,12 @@ Selecting previously deselected package python-crypto.
 Unpacking python-crypto (from .../python-crypto_2.3-2_amd64.deb) ...
 Setting up python-crypto (2.3-2) ...
 Log ended: 2012-09-11  08:51:27
+
+Log started: 2012-09-11  10:01:47
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Log ended: 2012-09-11  10:01:48
+
+Log started: 2012-09-11  10:02:10
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Log ended: 2012-09-11  10:02:10

@@ -29,6 +29,7 @@ text/plain; less '%s'; needsterminal
 text/html; /usr/bin/sensible-browser '%s'; description=HTML Text; nametemplate=%s.html
 application/x-tar; /bin/tar tvf -; print=/bin/tar tvf - | print text/plain:-; copiousoutput
 application/x-gtar; /bin/tar tvzf -; print=/bin/tar tvzf - | print text/plain:-; copiousoutput
+application/zip; unzip -l '%s'; nametemplate=%s.zip; copiousoutput
 text/plain; more '%s'; needsterminal
 text/plain; view '%s'; edit=vim '%s'; compose=vim '%s'; needsterminal
 text/*; less '%s'; needsterminal

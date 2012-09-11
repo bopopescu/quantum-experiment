@@ -2068,3 +2068,13 @@
 2012-09-11 08:51:26 status unpacked python-crypto 2.3-2
 2012-09-11 08:51:26 status half-configured python-crypto 2.3-2
 2012-09-11 08:51:27 status installed python-crypto 2.3-2
+2012-09-11 10:02:10 startup archives unpack
+2012-09-11 10:02:10 install unzip <none> 6.0-4ubuntu1
+2012-09-11 10:02:10 status half-installed unzip 6.0-4ubuntu1
+2012-09-11 10:02:10 status unpacked unzip 6.0-4ubuntu1
+2012-09-11 10:02:10 status unpacked unzip 6.0-4ubuntu1
+2012-09-11 10:02:10 startup packages configure
+2012-09-11 10:02:10 configure unzip 6.0-4ubuntu1 <none>
+2012-09-11 10:02:10 status unpacked unzip 6.0-4ubuntu1
+2012-09-11 10:02:10 status half-configured unzip 6.0-4ubuntu1
+2012-09-11 10:02:10 status installed unzip 6.0-4ubuntu1

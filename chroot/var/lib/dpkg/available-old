@@ -3660,6 +3660,33 @@ Description-md5: 094502bbe824d039d9076393a5ce9673
 Supported: 18m
 Task: minimal
 
+Package: python-crypto
+Priority: optional
+Section: python
+Installed-Size: 2376
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.3-2
+Replaces: python2.3-crypto, python2.4-crypto
+Provides: python2.6-crypto, python2.7-crypto
+Depends: python2.7 | python2.6, python (>= 2.7.1-0ubuntu2), python (<< 2.8), libc6 (>= 2.4), libgmp10
+Suggests: python-crypto-dbg, python-crypto-doc
+Conflicts: python2.3-crypto, python2.4-crypto
+Size: 430186
+Description: cryptographic algorithms and protocols for Python
+ A collection of cryptographic algorithms and protocols, implemented
+ for use from Python. Among the contents of the package:
+ .
+  * Hash functions: HMAC, MD2, MD4, MD5, RIPEMD160, SHA, SHA256.
+  * Block encryption algorithms: AES, ARC2, Blowfish, CAST, DES, Triple-DES.
+  * Stream encryption algorithms: ARC4, simple XOR.
+  * Public-key algorithms: RSA, DSA, ElGamal, qNEW.
+  * Protocols: All-or-nothing transforms, chaffing/winnowing.
+  * Miscellaneous: RFC1751 module for converting 128-key keys
+    into a set of English words, primality testing, random number gereration.
+Original-Maintainer: Sebastian Ramacher <s.ramacher@gmx.at>
+Homepage: http://www.pycrypto.org/
+
 Package: iputils-ping
 Priority: important
 Section: net

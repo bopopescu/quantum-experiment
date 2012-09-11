@@ -78,3 +78,14 @@ Start-Date: 2012-09-11  08:51:26
 Commandline: apt-get install python-crypto
 Install: python-crypto:amd64 (2.3-2)
 End-Date: 2012-09-11  08:51:27
+
+Start-Date: 2012-09-11  10:01:47
+Commandline: apt-get install unzip
+Install: unzip:amd64 (6.0-4ubuntu1)
+Error: Sub-process /usr/bin/dpkg returned an error code (2)
+End-Date: 2012-09-11  10:01:48
+
+Start-Date: 2012-09-11  10:02:10
+Commandline: apt-get install unzip
+Install: unzip:amd64 (6.0-4ubuntu1)
+End-Date: 2012-09-11  10:02:10

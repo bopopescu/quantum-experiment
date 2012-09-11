@@ -3918,6 +3918,28 @@ Description: Shared library for the Lua interpreter version 5.1
 Original-Maintainer: John V. Belmonte <jbelmonte@debian.org>
 Homepage: http://www.lua.org
 
+Package: unzip
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 424
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 6.0-4ubuntu1
+Replaces: unzip-crypt (<< 5.41)
+Depends: libbz2-1.0, libc6 (>= 2.4)
+Suggests: zip
+Conflicts: unzip-crypt (<< 5.41)
+Description: De-archiver for .zip files
+ InfoZIP's unzip program. With the exception of multi-volume archives
+ (ie, .ZIP files that are split across several disks using PKZIP's /& option),
+ this can handle any file produced either by PKZIP, or the corresponding
+ InfoZIP zip program.
+ .
+ This version supports encryption.
+Homepage: http://www.info-zip.org/UnZip.html
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
 Package: zlib1g-dev
 Status: install ok installed
 Priority: optional
