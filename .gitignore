@@ -1,3 +1,4 @@
+chroot/var/cache/ldconfig/aux-cache
 chroot/root
 chroot/tmp
 *.py[co]
