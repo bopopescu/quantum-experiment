@@ -1,0 +1,40 @@
+= Overview =
+This is a simple branch-based test creation, management, and execution environment.
+
+== Organization ==
+This repo contains:
+{|
+ ! chroot/
+ | A self-contained and versioned environment for executing tests
+ |-
+ ! tests/test.py
+ | The test entry point.  Contains an initial example test.
+ |- 
+ ! bin/run-test.sh
+ | A script for executing a particular test (see below)
+ |-
+ ! bin/setup-chroot.sh
+ | A script for preparing and executing in the chroot environment
+ |}
+
+= Creating a Test =
+Here are the steps for creating a test for a bug (e.g., EUCA-1234)
+IMPORTANT:  NEVER modify the master branch.  Always use a seperate branch per test.
+1. Create a branch for your test:
+  git checkout -b EUCA-1234 master
+2. Modify tests/test.py to do whatever is needed.  Additional files should go into tests/ so they can be setup for execution in the chroot.
+3. Commit changes you are ready to try
+  git commit -m 'Commit my awesome test' tests/
+
+= Running & Debugging a Test =
+4. Try your test out
+  ./bin/run-test.sh EUCA-1234 /path/to/my-cloud.conf
+5. Find the output of the test by the dated branch name created
+  git branch | grep EUCA-1234
+6. Debug your test by dropping into the chroot and running it by hand
+  ./bin/setup-chroot.sh /bin/bash -i
+  /root/tests/test.py /root/cloud.conf
+  exit
+
+  
+ 
