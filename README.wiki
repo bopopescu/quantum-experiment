@@ -4,18 +4,18 @@ This is a simple branch-based test creation, management, and execution environme
 == Organization ==
 This repo contains:
 {|
- ! chroot/
- | A self-contained and versioned environment for executing tests
- |-
- ! tests/test.py
- | The test entry point.  Contains an initial example test.
- |- 
- ! bin/run-test.sh
- | A script for executing a particular test (see below)
- |-
- ! bin/setup-chroot.sh
- | A script for preparing and executing in the chroot environment
- |}
+! chroot/
+| A self-contained and versioned environment for executing tests
+|-
+! tests/test.py
+| The test entry point.  Contains an initial example test.
+|- 
+! bin/run-test.sh
+| A script for executing a particular test (see below)
+|-
+! bin/setup-chroot.sh
+| A script for preparing and executing in the chroot environment
+|}
 
 = Creating a Test =
 Here are the steps for creating a test for a bug (e.g., EUCA-1234)
