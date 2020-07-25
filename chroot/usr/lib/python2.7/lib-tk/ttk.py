@@ -23,7 +23,7 @@ __all__ = ["Button", "Checkbutton", "Combobox", "Entry", "Frame", "Label",
            # Extensions
            "LabeledScale", "OptionMenu",
            # functions
-           "tclobjs_to_py", "setup_master"]
+           "tclobjs_to_py", "setup_main"]
 
 import Tkinter
 
@@ -32,7 +32,7 @@ _flatten = Tkinter._flatten
 # Verify if Tk is new enough to not need the Tile package
 _REQUIRE_TILE = True if Tkinter.TkVersion < 8.5 else False
 
-def _load_tile(master):
+def _load_tile(main):
     if _REQUIRE_TILE:
         import os
         tilelib = os.environ.get('TILE_LIBRARY')
@@ -40,12 +40,12 @@ def _load_tile(master):
             # append custom tile path to the list of directories that
             # Tcl uses when attempting to resolve packages with the package
             # command
-            master.tk.eval(
+            main.tk.eval(
                     'global auto_path; '
                     'lappend auto_path {%s}' % tilelib)
 
-        master.tk.eval('package require tile') # TclError may be raised here
-        master._tile_loaded = True
+        main.tk.eval('package require tile') # TclError may be raised here
+        main._tile_loaded = True
 
 def _format_optdict(optdict, script=False, ignore=None):
     """Formats optdict to a tuple to pass it to tk.call.
@@ -349,21 +349,21 @@ def tclobjs_to_py(adict):
 
     return adict
 
-def setup_master(master=None):
-    """If master is not None, itself is returned. If master is None,
-    the default master is returned if there is one, otherwise a new
-    master is created and returned.
+def setup_main(main=None):
+    """If main is not None, itself is returned. If main is None,
+    the default main is returned if there is one, otherwise a new
+    main is created and returned.
 
-    If it is not allowed to use the default root and master is None,
+    If it is not allowed to use the default root and main is None,
     RuntimeError is raised."""
-    if master is None:
+    if main is None:
         if Tkinter._support_default_root:
-            master = Tkinter._default_root or Tkinter.Tk()
+            main = Tkinter._default_root or Tkinter.Tk()
         else:
             raise RuntimeError(
-                    "No master specified and Tkinter is "
+                    "No main specified and Tkinter is "
                     "configured to not support default root")
-    return master
+    return main
 
 
 class Style(object):
@@ -371,15 +371,15 @@ class Style(object):
 
     _name = "ttk::style"
 
-    def __init__(self, master=None):
-        master = setup_master(master)
+    def __init__(self, main=None):
+        main = setup_main(main)
 
-        if not getattr(master, '_tile_loaded', False):
+        if not getattr(main, '_tile_loaded', False):
             # Load tile now, if needed
-            _load_tile(master)
+            _load_tile(main)
 
-        self.master = master
-        self.tk = self.master.tk
+        self.main = main
+        self.tk = self.main.tk
 
 
     def configure(self, style, query_opt=None, **kw):
@@ -533,8 +533,8 @@ class Style(object):
 class Widget(Tkinter.Widget):
     """Base class for Tk themed widgets."""
 
-    def __init__(self, master, widgetname, kw=None):
-        """Constructs a Ttk Widget with the parent master.
+    def __init__(self, main, widgetname, kw=None):
+        """Constructs a Ttk Widget with the parent main.
 
         STANDARD OPTIONS
 
@@ -553,11 +553,11 @@ class Widget(Tkinter.Widget):
             active, disabled, focus, pressed, selected, background,
             readonly, alternate, invalid
         """
-        master = setup_master(master)
-        if not getattr(master, '_tile_loaded', False):
+        main = setup_main(main)
+        if not getattr(main, '_tile_loaded', False):
             # Load tile now, if needed
-            _load_tile(master)
-        Tkinter.Widget.__init__(self, master, widgetname, kw=kw)
+            _load_tile(main)
+        Tkinter.Widget.__init__(self, main, widgetname, kw=kw)
 
 
     def identify(self, x, y):
@@ -599,8 +599,8 @@ class Button(Widget):
     """Ttk Button widget, displays a textual label and/or image, and
     evaluates a command when pressed."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Button widget with the parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Button widget with the parent main.
 
         STANDARD OPTIONS
 
@@ -611,7 +611,7 @@ class Button(Widget):
 
             command, default, width
         """
-        Widget.__init__(self, master, "ttk::button", kw)
+        Widget.__init__(self, main, "ttk::button", kw)
 
 
     def invoke(self):
@@ -622,8 +622,8 @@ class Button(Widget):
 class Checkbutton(Widget):
     """Ttk Checkbutton widget which is either in on- or off-state."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Checkbutton widget with the parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Checkbutton widget with the parent main.
 
         STANDARD OPTIONS
 
@@ -634,7 +634,7 @@ class Checkbutton(Widget):
 
             command, offvalue, onvalue, variable
         """
-        Widget.__init__(self, master, "ttk::checkbutton", kw)
+        Widget.__init__(self, main, "ttk::checkbutton", kw)
 
 
     def invoke(self):
@@ -652,8 +652,8 @@ class Entry(Widget, Tkinter.Entry):
     """Ttk Entry widget displays a one-line text string and allows that
     string to be edited by the user."""
 
-    def __init__(self, master=None, widget=None, **kw):
-        """Constructs a Ttk Entry widget with the parent master.
+    def __init__(self, main=None, widget=None, **kw):
+        """Constructs a Ttk Entry widget with the parent main.
 
         STANDARD OPTIONS
 
@@ -668,7 +668,7 @@ class Entry(Widget, Tkinter.Entry):
 
             none, key, focus, focusin, focusout, all
         """
-        Widget.__init__(self, master, widget or "ttk::entry", kw)
+        Widget.__init__(self, main, widget or "ttk::entry", kw)
 
 
     def bbox(self, index):
@@ -694,8 +694,8 @@ class Combobox(Entry):
     """Ttk Combobox widget combines a text field with a pop-down list of
     values."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Combobox widget with the parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Combobox widget with the parent main.
 
         STANDARD OPTIONS
 
@@ -711,7 +711,7 @@ class Combobox(Entry):
         if "values" in kw:
             kw["values"] = _format_optdict({'v': kw["values"]})[1]
 
-        Entry.__init__(self, master, "ttk::combobox", **kw)
+        Entry.__init__(self, main, "ttk::combobox", **kw)
 
 
     def __setitem__(self, item, value):
@@ -747,8 +747,8 @@ class Frame(Widget):
     """Ttk Frame widget is a container, used to group other widgets
     together."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Frame with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Frame with parent main.
 
         STANDARD OPTIONS
 
@@ -758,14 +758,14 @@ class Frame(Widget):
 
             borderwidth, relief, padding, width, height
         """
-        Widget.__init__(self, master, "ttk::frame", kw)
+        Widget.__init__(self, main, "ttk::frame", kw)
 
 
 class Label(Widget):
     """Ttk Label widget displays a textual label and/or image."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Label with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Label with parent main.
 
         STANDARD OPTIONS
 
@@ -777,7 +777,7 @@ class Label(Widget):
             anchor, background, font, foreground, justify, padding,
             relief, text, wraplength
         """
-        Widget.__init__(self, master, "ttk::label", kw)
+        Widget.__init__(self, main, "ttk::label", kw)
 
 
 class Labelframe(Widget):
@@ -785,8 +785,8 @@ class Labelframe(Widget):
     together. It has an optional label, which may be a plain text string
     or another widget."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Labelframe with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Labelframe with parent main.
 
         STANDARD OPTIONS
 
@@ -796,7 +796,7 @@ class Labelframe(Widget):
             labelanchor, text, underline, padding, labelwidget, width,
             height
         """
-        Widget.__init__(self, master, "ttk::labelframe", kw)
+        Widget.__init__(self, main, "ttk::labelframe", kw)
 
 LabelFrame = Labelframe # Tkinter name compatibility
 
@@ -805,8 +805,8 @@ class Menubutton(Widget):
     """Ttk Menubutton widget displays a textual label and/or image, and
     displays a menu when pressed."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Menubutton with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Menubutton with parent main.
 
         STANDARD OPTIONS
 
@@ -817,7 +817,7 @@ class Menubutton(Widget):
 
             direction, menu
         """
-        Widget.__init__(self, master, "ttk::menubutton", kw)
+        Widget.__init__(self, main, "ttk::menubutton", kw)
 
 
 class Notebook(Widget):
@@ -825,8 +825,8 @@ class Notebook(Widget):
     a single one at a time. Each child window is associated with a tab,
     which the user may select to change the currently-displayed window."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Notebook with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Notebook with parent main.
 
         STANDARD OPTIONS
 
@@ -854,7 +854,7 @@ class Notebook(Widget):
                 * The string "end", which returns the number of tabs (only
                   valid for method index)
         """
-        Widget.__init__(self, master, "ttk::notebook", kw)
+        Widget.__init__(self, main, "ttk::notebook", kw)
 
 
     def add(self, child, **kw):
@@ -957,8 +957,8 @@ class Panedwindow(Widget, Tkinter.PanedWindow):
     """Ttk Panedwindow widget displays a number of subwindows, stacked
     either vertically or horizontally."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Panedwindow with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Panedwindow with parent main.
 
         STANDARD OPTIONS
 
@@ -972,7 +972,7 @@ class Panedwindow(Widget, Tkinter.PanedWindow):
 
             weight
         """
-        Widget.__init__(self, master, "ttk::panedwindow", kw)
+        Widget.__init__(self, main, "ttk::panedwindow", kw)
 
 
     forget = Tkinter.PanedWindow.forget # overrides Pack.forget
@@ -1019,8 +1019,8 @@ class Progressbar(Widget):
     indeterminate mode provides an animated display to let the user know
     that something is happening."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Progressbar with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Progressbar with parent main.
 
         STANDARD OPTIONS
 
@@ -1030,7 +1030,7 @@ class Progressbar(Widget):
 
             orient, length, mode, maximum, value, variable, phase
         """
-        Widget.__init__(self, master, "ttk::progressbar", kw)
+        Widget.__init__(self, main, "ttk::progressbar", kw)
 
 
     def start(self, interval=None):
@@ -1058,8 +1058,8 @@ class Radiobutton(Widget):
     """Ttk Radiobutton widgets are used in groups to show or change a
     set of mutually-exclusive options."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Radiobutton with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Radiobutton with parent main.
 
         STANDARD OPTIONS
 
@@ -1070,7 +1070,7 @@ class Radiobutton(Widget):
 
             command, value, variable
         """
-        Widget.__init__(self, master, "ttk::radiobutton", kw)
+        Widget.__init__(self, main, "ttk::radiobutton", kw)
 
 
     def invoke(self):
@@ -1086,8 +1086,8 @@ class Scale(Widget, Tkinter.Scale):
     """Ttk Scale widget is typically used to control the numeric value of
     a linked variable that varies uniformly over some range."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Scale with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Scale with parent main.
 
         STANDARD OPTIONS
 
@@ -1097,7 +1097,7 @@ class Scale(Widget, Tkinter.Scale):
 
             command, from, length, orient, to, value, variable
         """
-        Widget.__init__(self, master, "ttk::scale", kw)
+        Widget.__init__(self, main, "ttk::scale", kw)
 
 
     def configure(self, cnf=None, **kw):
@@ -1124,8 +1124,8 @@ class Scale(Widget, Tkinter.Scale):
 class Scrollbar(Widget, Tkinter.Scrollbar):
     """Ttk Scrollbar controls the viewport of a scrollable widget."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Scrollbar with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Scrollbar with parent main.
 
         STANDARD OPTIONS
 
@@ -1135,15 +1135,15 @@ class Scrollbar(Widget, Tkinter.Scrollbar):
 
             command, orient
         """
-        Widget.__init__(self, master, "ttk::scrollbar", kw)
+        Widget.__init__(self, main, "ttk::scrollbar", kw)
 
 
 class Separator(Widget):
     """Ttk Separator widget displays a horizontal or vertical separator
     bar."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Separator with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Separator with parent main.
 
         STANDARD OPTIONS
 
@@ -1153,21 +1153,21 @@ class Separator(Widget):
 
             orient
         """
-        Widget.__init__(self, master, "ttk::separator", kw)
+        Widget.__init__(self, main, "ttk::separator", kw)
 
 
 class Sizegrip(Widget):
     """Ttk Sizegrip allows the user to resize the containing toplevel
     window by pressing and dragging the grip."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Sizegrip with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Sizegrip with parent main.
 
         STANDARD OPTIONS
 
             class, cursor, state, style, takefocus
         """
-        Widget.__init__(self, master, "ttk::sizegrip", kw)
+        Widget.__init__(self, main, "ttk::sizegrip", kw)
 
 
 class Treeview(Widget, Tkinter.XView, Tkinter.YView):
@@ -1177,8 +1177,8 @@ class Treeview(Widget, Tkinter.XView, Tkinter.YView):
     of data values. The data values are displayed in successive columns
     after the tree label."""
 
-    def __init__(self, master=None, **kw):
-        """Construct a Ttk Treeview with parent master.
+    def __init__(self, main=None, **kw):
+        """Construct a Ttk Treeview with parent main.
 
         STANDARD OPTIONS
 
@@ -1197,7 +1197,7 @@ class Treeview(Widget, Tkinter.XView, Tkinter.YView):
 
             foreground, background, font, image
         """
-        Widget.__init__(self, master, "ttk::treeview", kw)
+        Widget.__init__(self, main, "ttk::treeview", kw)
 
 
     def bbox(self, item, column=None):
@@ -1288,7 +1288,7 @@ class Treeview(Widget, Tkinter.XView, Tkinter.YView):
         cmd = kw.get('command')
         if cmd and not isinstance(cmd, basestring):
             # callback not registered yet, do it now
-            kw['command'] = self.master.register(cmd, self._substitute)
+            kw['command'] = self.main.register(cmd, self._substitute)
 
         if option is not None:
             kw[option] = None
@@ -1489,8 +1489,8 @@ class LabeledScale(Frame, object):
     The Ttk Scale can be accessed through instance.scale, and Ttk Label
     can be accessed through instance.label"""
 
-    def __init__(self, master=None, variable=None, from_=0, to=10, **kw):
-        """Construct an horizontal LabeledScale with parent master, a
+    def __init__(self, main=None, variable=None, from_=0, to=10, **kw):
+        """Construct an horizontal LabeledScale with parent main, a
         variable to be associated with the Ttk Scale widget and its range.
         If variable is not specified, a Tkinter.IntVar is created.
 
@@ -1502,8 +1502,8 @@ class LabeledScale(Frame, object):
         """
         self._label_top = kw.pop('compound', 'top') == 'top'
 
-        Frame.__init__(self, master, **kw)
-        self._variable = variable or Tkinter.IntVar(master)
+        Frame.__init__(self, main, **kw)
+        self._variable = variable or Tkinter.IntVar(main)
         self._variable.set(from_)
         self._last_valid = from_
 
@@ -1580,8 +1580,8 @@ class OptionMenu(Menubutton):
     """Themed OptionMenu, based after Tkinter's OptionMenu, which allows
     the user to select a value from a menu."""
 
-    def __init__(self, master, variable, default=None, *values, **kwargs):
-        """Construct a themed OptionMenu widget with master as the parent,
+    def __init__(self, main, variable, default=None, *values, **kwargs):
+        """Construct a themed OptionMenu widget with main as the parent,
         the resource textvariable set to variable, the initially selected
         value specified by the default parameter, the menu values given by
         *values and additional keywords.
@@ -1597,7 +1597,7 @@ class OptionMenu(Menubutton):
         """
         kw = {'textvariable': variable, 'style': kwargs.pop('style', None),
               'direction': kwargs.pop('direction', None)}
-        Menubutton.__init__(self, master, **kw)
+        Menubutton.__init__(self, main, **kw)
         self['menu'] = Tkinter.Menu(self, tearoff=False)
 
         self._variable = variable
